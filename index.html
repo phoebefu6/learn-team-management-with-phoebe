@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Six sessions on how a team runs: what makes a group a team, who decides what, the team's rhythm and what it costs, a team-size bench that prices a constructed data team's week under four designs, psychological safety and conflict read at source, and remote, async and key-person risk. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn Team Management with Phoebe">
+<meta property="og:description" content="How a team runs, not how to manage one person. Six sessions, one constructed 7-person data team, and a bench that prices every design's week in your browser.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Team Management with Phoebe">
+<meta name="twitter:description" content="Paths, rituals, decision rights, safety and the bus factor: how a team runs, priced in your browser.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn Team Management with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=15">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: 1; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(var(--shadow-rgb),.16); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--muted); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,var(--indigo-50)); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .not-this { border: 1px solid var(--hairline); border-left: 4px solid var(--clay); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.3rem; margin-top: 1.2rem; }
+  .not-this h3 { font-size: .95rem; font-weight: 800; margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe · Leadership</div>
+    <h1>Learn <span class="accent">Team Management</span> with Phoebe</h1>
+    <p class="sub">How a team runs, as distinct from how to manage any one person in it. Six sessions on the design of a team: what turns a group with one manager into a team, who decides what and how a disagreement gets closed, the rituals a team keeps and what they cost in hours, safety and conflict as research actually describes them, and the remote, async and key-person risks that decide whether a team survives its best person leaving. One constructed running case, Northline, a 7-person data team, and one bench that prices its week under four designs in your browser.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="21">21</b><span>paths in a team of 7</span></div>
+      <div class="stat"><b data-count="36">36</b><span>paths in a team of 9</span></div>
+      <div class="stat"><b data-count="4">4</b><span>team designs on the bench</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions 🧭 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· from a group with one manager to a team that survives its key person leaving</span></h2>
+      <p class="plede">The running case is <strong>Northline, a constructed 7-person data team</strong> inside an invented retail company. Everyone syncs with everyone whenever something comes up, two stakeholders send competing requests to whoever answers first, nobody is sure who decides priorities, and the pipeline lives in one person's head. Ana, the lead, has six sessions to turn that into a team. Northline and everyone in it are invented for teaching, and every page says so.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-a-team-not-a-group.html" style="--diff:#34D399">
+        <span class="cicon">🧩</span>
+        <span class="cnum">Session 1 · foundations</span>
+        <h3>A team is not a group of people with the same manager</h3>
+        <p>Shared outcome, a boundary and work that depends on each other; communication paths n(n-1)/2; why no ideal size is proven; four team shapes; the one-page charter.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-who-decides-what.html" style="--diff:#FBBF24">
+        <span class="cicon">⚖️</span>
+        <span class="cnum">Session 2 · core</span>
+        <h3>Who decides what</h3>
+        <p>A decision-rights table for the decisions a team makes every month, different processes for reversible and hard-to-reverse calls, and a way to close a disagreement that does not wait for the loudest person.</p>
+        <span class="meta"><span class="pill">decision rights</span></span>
+      </a>
+      <a class="course-card" href="courses/03-rhythm-and-cost.html" style="--diff:#FBBF24">
+        <span class="cicon">🥁</span>
+        <span class="cnum">Session 3 · core</span>
+        <h3>The team's rhythm and what it costs</h3>
+        <p>Which rituals, how often, who attends, priced in person-hours. Why a ritual set pays only when it replaces ad hoc coordination, and how to protect focus time from interrupts.</p>
+        <span class="meta"><span class="pill">the ritual budget</span></span>
+      </a>
+      <a class="course-card" href="courses/04-the-team-size-bench.html" style="--diff:#F87171">
+        <span class="cicon">📐</span>
+        <span class="cnum">Session 4 · bench night</span>
+        <h3>The team-size bench</h3>
+        <p>Exact paths and a modelled week for four designs of a constructed 7-person team, the late-project anti-lever that tests Brooks's law, and the break button where the one person who knows the pipeline leaves.</p>
+        <span class="meta"><span class="pill amber">★ the bench</span></span>
+      </a>
+      <a class="course-card" href="courses/05-safety-and-conflict.html" style="--diff:#FB923C">
+        <span class="cicon">🛟</span>
+        <span class="cnum">Session 5 · deeper</span>
+        <h3>Safety, conflict and the disagreement you need</h3>
+        <p>Psychological safety read at source, what Google's Project Aristotle is and is not, the unsettled research on task conflict, and conflict between priorities routed through decision rights.</p>
+        <span class="meta"><span class="pill">safety first</span></span>
+      </a>
+      <a class="course-card" href="courses/06-remote-async-key-person.html" style="--diff:#FB923C">
+        <span class="cicon">🛰️</span>
+        <span class="cnum">Session 6 · deeper</span>
+        <h3>Remote, async and the person who knows everything</h3>
+        <p>What remote work did to one company's collaboration network, async defaults that keep a team deciding, a shield for interrupt load, and a key-person plan checked on the bench.</p>
+        <span class="meta"><span class="pill amber">🔒 the plan</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>foundations</span>
+      <span><i style="background:#FBBF24"></i>core</span>
+      <span><i style="background:#FB923C"></i>deeper</span>
+      <span><i style="background:#F87171"></i>bench night</span>
+    </div>
+  </section>
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport 🎫</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Six stamps means you can tell a team from a group and write its charter, draw up decision rights, price your team's rhythm, read a team design in hours and paths, run safety and conflict on purpose, and plan for remote work and key-person risk. Stamps live in this browser only.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+  <section class="section">
+    <div class="not-this">
+      <h3>What this is not, so you land in the right place 🧭</h3>
+      <table class="clean">
+        <tr><th>If your question is</th><th>Go here instead</th></tr>
+        <tr><td>How do I onboard, coach, grow, or part ways with one person; how do I hold a hard conversation?</td><td><a href="https://phoebefu6.github.io/learn-performance-management-with-phoebe/">Performance Management ↗</a></td></tr>
+        <tr><td>What should I delegate, automate or keep, and how do I run meetings and feedback in an AI-augmented team?</td><td><a href="https://phoebefu6.github.io/learn-ai-leadership-with-phoebe/courses/b6-delegation.html">AI Leadership, Delegation ↗</a></td></tr>
+        <tr><td>How do I hire, screen and interview?</td><td><a href="https://phoebefu6.github.io/learn-ai-hr-with-phoebe/">AI HR ↗</a></td></tr>
+        <tr><td>How do I set goals and measure the team fairly?</td><td><a href="https://phoebefu6.github.io/learn-okr-with-phoebe/">OKRs ↗</a></td></tr>
+        <tr><td>How do I write a RACI for a project?</td><td><a href="https://phoebefu6.github.io/learn-tech-project-pmo-with-phoebe/courses/05-ownership-and-raci.html">Tech Project PMO, Ownership and RACI ↗</a></td></tr>
+        <tr><td>How do I run one meeting so the group actually decides?</td><td><a href="https://phoebefu6.github.io/learn-facilitation-with-phoebe/">Facilitation ↗</a></td></tr>
+        <tr><td><strong>How should my team be shaped, decide, meet, disagree and survive losing someone?</strong></td><td><strong>you are in the right place</strong></td></tr>
+      </table>
+      <p style="margin-top:.7rem;font-size:.86rem;color:var(--muted)"><strong>The team as the unit of design.</strong> Individual performance, hiring, goals, RACI and single meetings are taught next door and linked from here rather than repeated. Stress on these pages means workload and planning, never medical or clinical advice; the body side belongs to the Stress Control course planned on the <a href="https://phoebefu6.github.io/learn-with-phoebe/">shelf ↗</a>.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Three doors into the same idea: a team is designed, and the design shows up in everyone's week.</p>
+      <div class="path"><b>🆕 I just took over a team</b>
+        <a class="pstep" href="courses/01-a-team-not-a-group.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-who-decides-what.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-rhythm-and-cost.html">3</a>
+        <span style="font-size:.82rem;color:var(--muted)">charter, decision rights, rhythm</span>
+      </div>
+      <div class="path"><b>📈 My team is growing fast</b>
+        <a class="pstep" href="courses/04-the-team-size-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/01-a-team-not-a-group.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-remote-async-key-person.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">price the designs, reshape, protect the key person</span>
+      </div>
+      <div class="path"><b>🧭 The whole design</b>
+        <a class="pstep" href="courses/01-a-team-not-a-group.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-who-decides-what.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-rhythm-and-cost.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-team-size-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-safety-and-conflict.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-remote-async-key-person.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">from a group with one manager to a team that lasts</span>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here 🧾</h2>
+      <p class="plede">Management advice travels with famous claims, and several of the most quoted ones are company reports, essays or misreadings. Each claim on these pages carries its status.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Communication paths n(n-1)/2, and the bench's bus factor</td><td><strong>Exact:</strong> arithmetic on the declared team and its map of who knows what</td></tr>
+      <tr><td>Every hour figure on the bench: meetings, coordination, handoffs, focus, late-project weeks</td><td><strong>Modelled</strong> by rules printed on the widget, applied to a constructed team; only the direction of each effect is claimed</td></tr>
+      <tr><td>"Adding people to a late project makes it later"</td><td><strong>An essay claim</strong> (Brooks, 1975, reported). On the bench's own rules it holds near the deadline and fails further out. Session 4 traces it</td></tr>
+      <tr><td>"Google found psychological safety is what makes teams work"</td><td><strong>A company report.</strong> Google's re:Work guide, read at source, ranks it first of five dynamics in its own 180 teams; the research behind the term is Edmondson's 1999 study, read at source. Session 5</td></tr>
+      <tr><td>"Task conflict is good for teams"</td><td><strong>Contested.</strong> A 2003 meta-analysis found it hurt; a 2012 one did not find a strong negative link. Session 5 teaches the disagreement</td></tr>
+      <tr><td>"Dunbar's number" or any ideal team size</td><td><strong>Not supported</strong> for work teams by any source read here. Session 1</td></tr>
+      <tr><td>Northline, Ana and everyone in it</td><td><strong>Constructed,</strong> for teaching</td></tr>
+    </table>
+  </section>
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole path at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+  <footer class="pagefoot">
+    <span>learn-team-management-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span>Neighbours on the shelf: <a href="https://phoebefu6.github.io/learn-performance-management-with-phoebe/">Performance Management ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-ai-leadership-with-phoebe/">AI Leadership ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-facilitation-with-phoebe/">Facilitation ↗</a></span>
+  </footer>
+</main>
+<script>
+window.MINDMAP_DATA = {
+ "title": "Team\nManagement",
+ "centerColor": "#6B3012",
+ "sessions": [
+  {
+   "label": "A team is not\na group",
+   "href": "courses/01-a-team-not-a-group.html",
+   "color": "#34D399",
+   "concepts": [
+    {
+     "label": "Outcome, boundary, links",
+     "href": "courses/01-a-team-not-a-group.html"
+    },
+    {
+     "label": "Paths grow as n(n-1)/2",
+     "href": "courses/01-a-team-not-a-group.html"
+    },
+    {
+     "label": "The one-page charter",
+     "href": "courses/01-a-team-not-a-group.html"
+    }
+   ]
+  },
+  {
+   "label": "Who decides\nwhat",
+   "href": "courses/02-who-decides-what.html",
+   "color": "#FBBF24",
+   "concepts": [
+    {
+     "label": "One decider per decision",
+     "href": "courses/02-who-decides-what.html"
+    },
+    {
+     "label": "Close disagreement on time",
+     "href": "courses/02-who-decides-what.html"
+    },
+    {
+     "label": "The decision log",
+     "href": "courses/02-who-decides-what.html"
+    }
+   ]
+  },
+  {
+   "label": "Rhythm and\nwhat it costs",
+   "href": "courses/03-rhythm-and-cost.html",
+   "color": "#FBBF24",
+   "concepts": [
+    {
+     "label": "Rituals as a budget",
+     "href": "courses/03-rhythm-and-cost.html"
+    },
+    {
+     "label": "Replace, do not add",
+     "href": "courses/03-rhythm-and-cost.html"
+    },
+    {
+     "label": "Protect focus time",
+     "href": "courses/03-rhythm-and-cost.html"
+    }
+   ]
+  },
+  {
+   "label": "The team-size\nbench",
+   "href": "courses/04-the-team-size-bench.html",
+   "color": "#F87171",
+   "concepts": [
+    {
+     "label": "Four designs, priced",
+     "href": "courses/04-the-team-size-bench.html"
+    },
+    {
+     "label": "Late hires cost first",
+     "href": "courses/04-the-team-size-bench.html"
+    },
+    {
+     "label": "Bus factor, broken",
+     "href": "courses/04-the-team-size-bench.html"
+    }
+   ]
+  },
+  {
+   "label": "Safety and\nconflict",
+   "href": "courses/05-safety-and-conflict.html",
+   "color": "#FB923C",
+   "concepts": [
+    {
+     "label": "Edmondson at source",
+     "href": "courses/05-safety-and-conflict.html"
+    },
+    {
+     "label": "Task conflict: contested",
+     "href": "courses/05-safety-and-conflict.html"
+    },
+    {
+     "label": "Priority conflict protocol",
+     "href": "courses/05-safety-and-conflict.html"
+    }
+   ]
+  },
+  {
+   "label": "Remote, async,\nkey person",
+   "href": "courses/06-remote-async-key-person.html",
+   "color": "#FB923C",
+   "concepts": [
+    {
+     "label": "Remote is not async",
+     "href": "courses/06-remote-async-key-person.html"
+    },
+    {
+     "label": "An interrupt shield",
+     "href": "courses/06-remote-async-key-person.html"
+    },
+    {
+     "label": "Raise the bus factor",
+     "href": "courses/06-remote-async-key-person.html"
+    }
+   ]
+  }
+ ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=15"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 1 of 6. A team is a few people who share an outcome and depend on each other's work, not everyone who reports to one manager. Shared outcome and boundary, communication paths n(n-1)/2, why no one has proved an ideal team size, Team Topologies' four team types, Conway's law, and a one-page team charter.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="A team is not a group of people with the same manager - learn team management with phoebe">
+<meta property="og:description" content="Session 1 of 6. Shared outcome, a boundary, the paths that grow with every person, and a charter on one page.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/courses/01-a-team-not-a-group.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A team is not a group of people with the same manager - learn team management with phoebe">
+<meta name="twitter:description" content="Session 1 of 6. What makes a team, how size multiplies the paths, and the charter.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 1 · A team is not a group of people with the same manager - learn team management with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=15">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-team-management-with-phoebe</a> / Session 1 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Team Management with Phoebe · Session 1 of 6</div>
+    <h1>A <span class="accent">team</span> is not a group of people with the same manager</h1>
+    <p class="sub">Seven people can share a manager, a budget line and a channel and still not be a team. A team shares an outcome nobody can deliver alone, knows who is in it and who is not, and depends on each other's work every week. Tonight we draw that line, count what every extra person adds in communication paths, look honestly at the claim that there is an ideal team size, name the four shapes a team can take, and write the one-page charter that turns a group into a team on paper first.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Foundations</span>
+      <span class="chip audience">Anyone who leads a team</span>
+      <span class="chip audience">No tools needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Team, size, shape</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: the charter</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">The running case is constructed. Northline is an invented 7-person data team inside an invented retail company: Ana leads it, Priya runs the data pipeline, Tom builds dashboards, Wei and Lena build models, Sam answers business questions and Kofi keeps the platform up. Everyone syncs with everyone whenever something comes up, two stakeholders send competing requests to whoever answers first, nobody is sure who decides priorities, and the pipeline lives in Priya's head. Every move Ana makes across the six sessions is one you can make with your own team.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>About stress.</strong> When these pages talk about stress, they mean workload and planning: hours, interrupts, who carries what. Nothing here is medical or clinical advice. The body side, how the stress response works and what turns it down, belongs to the Stress Control course planned on the <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe shelf ↗</a>.</p>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> A test for whether your group is a team, the path count for any team size and why it grows faster than headcount, an honest answer to "what is the right size", a name for your team's shape, and a one-page charter: outcome, members, what you own, what you do not, and the agreements you work by.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers group against team</span>
+      <h2>A shared outcome, a boundary, and work that depends on each other</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">A group of people with the same manager is a reporting line. Each person can do their job well and the group still delivers nothing together, because there is nothing it delivers together. A team is defined by the work, not the org chart: an outcome that needs several of its members, a clear answer to who is in, and members whose work feeds each other's. Northline today is the first kind, and Ana's job is to make it the second.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels. Left, a group: one manager in the centre with seven spokes to seven people, each doing separate work, and no lines between the people. Right, a team: seven people around one shared outcome box, with lines between the people whose work feeds each other, and a dashed boundary around them all.">
+        <defs>
+          <filter id="t1aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="t1aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#9C4A1E" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .t1aH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1aL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1aS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t1aB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t1aA { font: 700 11px Inter, sans-serif; fill: #9C4A1E; }
+          .t1aN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t1aH" x="30" y="26">SAME MANAGER IS NOT THE SAME THING AS ONE TEAM</text>
+
+        <g filter="url(#t1aSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="44" width="400" height="206" rx="12" transform="rotate(-0.4 230 147)" fill="#FFFFFF"/>
+          <rect x="450" y="44" width="400" height="206" rx="12" transform="rotate(0.3 650 147)" fill="#FBF1EA"/>
+          <circle cx="230" cy="150" r="16" fill="#EBCDB8"/>
+          <path d="M230 134 L230 96 M244 142 L292 108 M246 154 L304 164 M240 164 L282 208 M220 164 L178 208 M214 154 L156 164 M216 142 L168 108"/>
+          <circle cx="230" cy="86" r="10" fill="#FFFFFF"/>
+          <circle cx="300" cy="102" r="10" fill="#FFFFFF"/>
+          <circle cx="316" cy="166" r="10" fill="#FFFFFF"/>
+          <circle cx="290" cy="216" r="10" fill="#FFFFFF"/>
+          <circle cx="170" cy="216" r="10" fill="#FFFFFF"/>
+          <circle cx="144" cy="166" r="10" fill="#FFFFFF"/>
+          <circle cx="160" cy="102" r="10" fill="#FFFFFF"/>
+          <rect x="606" y="128" width="88" height="40" rx="8" transform="rotate(-1 650 148)" fill="url(#t1aHc)" stroke="#3E5C8A"/>
+          <path d="M650 96 L650 126 M700 108 L694 130 M716 160 L696 154 M696 204 L680 170 M604 204 L620 170 M584 160 L604 154 M600 108 L606 130" stroke="#3E5C8A"/>
+          <path d="M660 86 L690 98 M716 116 L722 146 M716 182 L704 206 M676 216 L624 216 M596 206 L584 182 M578 146 L584 116 M610 98 L640 86" stroke-width="1.6"/>
+          <circle cx="650" cy="86" r="10" fill="#FFFFFF"/>
+          <circle cx="702" cy="104" r="10" fill="#FFFFFF"/>
+          <circle cx="724" cy="164" r="10" fill="#FFFFFF"/>
+          <circle cx="690" cy="216" r="10" fill="#FFFFFF"/>
+          <circle cx="610" cy="216" r="10" fill="#FFFFFF"/>
+          <circle cx="576" cy="164" r="10" fill="#FFFFFF"/>
+          <circle cx="598" cy="104" r="10" fill="#FFFFFF"/>
+          <rect x="548" y="66" width="204" height="170" rx="20" stroke="#3E5C8A" stroke-dasharray="7 6" stroke-width="1.6"/>
+        </g>
+
+        <text class="t1aL" x="48" y="68">A GROUP</text>
+        <text class="t1aS" x="48" y="84">one manager, seven jobs</text>
+        <text class="t1aS" x="230" y="154" text-anchor="middle">mgr</text>
+        <text class="t1aS" x="48" y="240">no line between any two people</text>
+        <text class="t1aL" x="468" y="68">A TEAM</text>
+        <text class="t1aB" x="650" y="146" text-anchor="middle">shared</text>
+        <text class="t1aB" x="650" y="160" text-anchor="middle">outcome</text>
+        <text class="t1aA" x="770" y="100">boundary:</text>
+        <text class="t1aA" x="770" y="114">who is in</text>
+        <text class="t1aS" x="468" y="196">work feeds</text>
+        <text class="t1aS" x="468" y="210">work, around</text>
+        <text class="t1aS" x="468" y="224">one outcome</text>
+
+        <text class="t1aN" x="30" y="282">The test is the work, not the org chart: what can these people deliver only together, and who exactly is "these people"?</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - a reporting line has only spokes; a team has an outcome in the middle and lines between its members</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Three questions that tell a team from a group<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Is there an outcome nobody here can deliver alone?</strong> "Each person hits their own targets" is a group. "Stakeholders get a weekly sales forecast they trust" needs Priya's pipeline, Kofi's platform, Wei's model and Tom's dashboard, and fails if any one of them slips. That is a team outcome.</p>
+        <p><strong>Can everyone name who is in?</strong> Ask each member to list the team. If the lists differ, the boundary is fuzzy, and a fuzzy boundary means nobody knows who must be in a decision, who gets the stand-up invite, or who covers when someone is away. At Northline, two people list the contractor who left in spring; one lists the stakeholder who sends the most requests.</p>
+        <p><strong>Does work pass between members every week?</strong> Interdependence is the price and the point. If nobody ever needs anyone else's work, there is no team problem to solve, and forcing team rituals on a group of independent specialists only adds meetings.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Hackman's "real team", and what is only reported<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>J. Richard Hackman's <em>Leading Teams</em> (2002) built its argument on five conditions for team effectiveness: a real team, a compelling direction, an enabling structure, a supportive organisational context, and competent coaching. The first, a real team, is described in summaries as clear boundaries, interdependence among members and some stability of membership. That matches the three questions above. The book itself was not read for these pages, so the list is reported from publisher listings and summaries, and no team-size number attributed to Hackman is repeated here.</p>
+        <p>The useful part for a team lead is the ordering. Hackman's conditions are mostly about the design of the team, settled before any coaching happens. Coaching individual people is a different craft, taught in <a href="https://phoebefu6.github.io/learn-performance-management-with-phoebe/">Performance Management ↗</a>; these pages stay with the design.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The "team" that is really a pool.</strong> A familiar pattern: a central analytics function of eight people, each assigned to a different business unit, sharing a manager and a weekly status meeting. The status meeting is eight separate updates nobody else needs. It is not a broken team; it is a pool of specialists, and it is better run as one: shared standards, a light rhythm, no pretence of a shared outcome. Calling it a team and adding team rituals is how meetings multiply without anything getting better.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers size and communication paths</span>
+      <h2>Every person you add brings a line to everyone already there</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Among n people there are n(n-1)/2 pairs who might need to talk. That is arithmetic, not research. Three people have 3 paths, five have 10, seven have 21, nine have 36: headcount grew threefold and paths twelvefold. Melvin Conway made the point in 1968, writing that the number of possible communication paths "is approximately half the square of the number of people", and argued against "the assumption that adding manpower simply adds to productivity".</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four small networks drawn side by side. Three people with 3 paths, five people with 10 paths, seven people with 21 paths, and nine people with 36 paths. Every pair is joined by a line. The seven-person network, Northline, is outlined in slate blue.">
+        <defs>
+          <filter id="t1bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="23" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t1bH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1bL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1bS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t1bV { font: 800 18px Inter, sans-serif; fill: #6B3012; }
+          .t1bB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t1bN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t1bH" x="30" y="26">PEOPLE GROW BY ONE, PATHS GROW BY EVERYONE ALREADY THERE</text>
+
+        <g filter="url(#t1bSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M120 80 L80 150 L160 150 Z" stroke-width="1.4"/>
+          <circle cx="120" cy="80" r="7" fill="#FFFFFF"/><circle cx="80" cy="150" r="7" fill="#FFFFFF"/><circle cx="160" cy="150" r="7" fill="#FFFFFF"/>
+          <path d="M330 72 L376 106 L358 160 L302 160 L284 106 Z M330 72 L358 160 L284 106 L376 106 L302 160 L330 72" stroke-width="1.2"/>
+          <circle cx="330" cy="72" r="7" fill="#FFFFFF"/><circle cx="376" cy="106" r="7" fill="#FFFFFF"/><circle cx="358" cy="160" r="7" fill="#FFFFFF"/><circle cx="302" cy="160" r="7" fill="#FFFFFF"/><circle cx="284" cy="106" r="7" fill="#FFFFFF"/>
+          <path d="M540 66 L584 87 L595 135 L564 173 L516 173 L485 135 L496 87 Z M540 66 L595 135 M540 66 L564 173 M540 66 L516 173 M540 66 L485 135 M584 87 L564 173 M584 87 L516 173 M584 87 L485 135 M584 87 L496 87 M595 135 L516 173 M595 135 L485 135 M595 135 L496 87 M564 173 L485 135 M564 173 L496 87 M516 173 L496 87" stroke-width="1" stroke="#3E5C8A"/>
+          <circle cx="540" cy="66" r="7" fill="#FFFFFF"/><circle cx="584" cy="87" r="7" fill="#FFFFFF"/><circle cx="595" cy="135" r="7" fill="#FFFFFF"/><circle cx="564" cy="173" r="7" fill="#FFFFFF"/><circle cx="516" cy="173" r="7" fill="#FFFFFF"/><circle cx="485" cy="135" r="7" fill="#FFFFFF"/><circle cx="496" cy="87" r="7" fill="#FFFFFF"/>
+          <path d="M750 62 L789 76 M750 62 L810 112 M750 62 L803 152 M750 62 L770 178 M750 62 L730 178 M750 62 L697 152 M750 62 L690 112 M750 62 L711 76 M789 76 L810 112 M789 76 L803 152 M789 76 L770 178 M789 76 L730 178 M789 76 L697 152 M789 76 L690 112 M789 76 L711 76 M810 112 L803 152 M810 112 L770 178 M810 112 L730 178 M810 112 L697 152 M810 112 L690 112 M810 112 L711 76 M803 152 L770 178 M803 152 L730 178 M803 152 L697 152 M803 152 L690 112 M803 152 L711 76 M770 178 L730 178 M770 178 L697 152 M770 178 L690 112 M770 178 L711 76 M730 178 L697 152 M730 178 L690 112 M730 178 L711 76 M697 152 L690 112 M697 152 L711 76 M690 112 L711 76" stroke-width=".9"/>
+          <circle cx="750" cy="62" r="6" fill="#FFFFFF"/><circle cx="789" cy="76" r="6" fill="#FFFFFF"/><circle cx="810" cy="112" r="6" fill="#FFFFFF"/><circle cx="803" cy="152" r="6" fill="#FFFFFF"/><circle cx="770" cy="178" r="6" fill="#FFFFFF"/><circle cx="730" cy="178" r="6" fill="#FFFFFF"/><circle cx="697" cy="152" r="6" fill="#FFFFFF"/><circle cx="690" cy="112" r="6" fill="#FFFFFF"/><circle cx="711" cy="76" r="6" fill="#FFFFFF"/>
+        </g>
+
+        <text class="t1bL" x="120" y="198" text-anchor="middle">3 people</text>
+        <text class="t1bV" x="120" y="226" text-anchor="middle">3 paths</text>
+        <text class="t1bL" x="330" y="198" text-anchor="middle">5 people</text>
+        <text class="t1bV" x="330" y="226" text-anchor="middle">10 paths</text>
+        <text class="t1bL" x="540" y="198" text-anchor="middle">7 people</text>
+        <text class="t1bV" x="540" y="226" text-anchor="middle">21 paths</text>
+        <text class="t1bB" x="540" y="244" text-anchor="middle">Northline today</text>
+        <text class="t1bL" x="750" y="198" text-anchor="middle">9 people</text>
+        <text class="t1bV" x="750" y="226" text-anchor="middle">36 paths</text>
+
+        <text class="t1bN" x="30" y="274">n(n-1)/2: each new person adds a path to every person already on the team. Session 4 puts hours on each path.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - from 7 to 9 people is two more names and fifteen more paths</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Not every path is used, and that is the design question<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A path is a pair who might need to coordinate, not a pair who must. The count is an upper bound on the coordination a team can generate, and much of team design is deciding which paths to use on purpose (a stand-up that covers all of them in fifteen minutes), which to route (requests go through one intake, not to whoever answers), and which to cut (two sub-teams that only meet at one interface). Session 3 prices the first, session 2 the second, and session 4 shows what the third does to Northline's week.</p>
+        <p>The count also explains a feeling every lead of a growing team has: the team got two people bigger and somehow everything got slower. Going from 7 to 9 adds 15 paths. Without a change in how the team coordinates, those paths are filled with ad hoc syncs.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>"The ideal team size", and the evidence there is not<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Dunbar's number.</strong> The claim that humans can maintain about 150 stable relationships comes from Robin Dunbar's comparative work on primate brains and group sizes (reported). It is often stretched to company and team design. A 2021 re-analysis by Lindenfors, Wartel and Lind, using the same kind of data with newer statistical methods, estimated mean human group sizes of about 69 to 109 with one method and 16 to 42 with another, with 95 percent intervals of 4 to 520 and 2 to 336, and concluded that "specifying any one number is futile". Either way, the number is about social networks, not about how many people can share a sprint.</p>
+        <p><strong>Google's Project Aristotle.</strong> Google's re:Work guide reports a study of 180 of its teams, sized from 3 to 50 with a median of nine, and lists team size among the factors that were not significantly connected with effectiveness at Google. That is a company's summary of an internal study whose methods and data are not published, so read it as "Google reports", not as a finding about teams in general.</p>
+        <p><strong>What a lead can use.</strong> No source read for these pages supports a single right size. What is solid is the arithmetic: paths grow with the square of headcount, so a bigger team needs more deliberate structure to keep coordination from eating the week. Session 4 makes that concrete with hours.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers team shapes and Conway's law</span>
+      <h2>What kind of team is this, and who does it serve?</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Conway's 1968 paper argued that organisations which design systems "are constrained to produce designs which are copies of the communication structures of these organizations". Later writers named that Conway's law. Its practical reading for a team lead: the shape of the team and the shape of what it builds end up the same, so choose the team's shape on purpose. Team Topologies, a practitioner book by Matthew Skelton and Manuel Pais, offers a vocabulary of four team types and three ways teams interact.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four team types drawn as boxes. A stream-aligned team in the centre delivers to the business. A platform team below offers a service to it, drawn as an X-as-a-Service arrow. An enabling team on the left helps it, drawn as a facilitating arrow. A complicated subsystem team on the right works with it for a period, drawn as a collaboration band. A note says Northline today tries to be all four at once.">
+        <defs>
+          <filter id="t1cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="37" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <marker id="t1cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2B1D16" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .t1cH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1cL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1cS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t1cB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t1cA { font: 700 11px Inter, sans-serif; fill: #9C4A1E; }
+          .t1cN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t1cH" x="30" y="26">FOUR TEAM TYPES AND THREE WAYS TO INTERACT (TEAM TOPOLOGIES, PRACTITIONER)</text>
+
+        <g filter="url(#t1cSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="330" y="100" width="220" height="70" rx="12" transform="rotate(-0.6 440 135)" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="330" y="226" width="220" height="56" rx="12" transform="rotate(0.5 440 254)" fill="#FFFFFF"/>
+          <rect x="40" y="104" width="200" height="62" rx="12" transform="rotate(0.7 140 135)" fill="#FFFFFF"/>
+          <rect x="640" y="104" width="200" height="62" rx="12" transform="rotate(-0.7 740 135)" fill="#FFFFFF"/>
+          <path d="M440 224 L440 176" marker-end="url(#t1cAr)"/>
+          <path d="M244 134 L324 134" stroke-dasharray="6 5" marker-end="url(#t1cAr)"/>
+          <rect x="551" y="120" width="88" height="30" rx="6" fill="#FBF1EA" stroke="#9C4A1E" stroke-dasharray="3 3" stroke-width="1.6"/>
+          <path d="M440 96 L440 62" marker-end="url(#t1cAr)"/>
+        </g>
+
+        <text class="t1cB" x="440" y="130" text-anchor="middle">stream-aligned</text>
+        <text class="t1cS" x="440" y="148" text-anchor="middle">a flow of business work</text>
+        <text class="t1cL" x="440" y="250" text-anchor="middle">platform</text>
+        <text class="t1cS" x="440" y="266" text-anchor="middle">an internal product</text>
+        <text class="t1cL" x="140" y="132" text-anchor="middle">enabling</text>
+        <text class="t1cS" x="140" y="150" text-anchor="middle">helps others get unstuck</text>
+        <text class="t1cL" x="740" y="132" text-anchor="middle">complicated subsystem</text>
+        <text class="t1cS" x="740" y="150" text-anchor="middle">deep specialist work</text>
+        <text class="t1cL" x="440" y="54" text-anchor="middle">the business</text>
+        <text class="t1cA" x="452" y="206">X-as-a-Service</text>
+        <text class="t1cA" x="284" y="124" text-anchor="middle">facilitating</text>
+        <text class="t1cA" x="595" y="186" text-anchor="middle">collaboration,</text>
+        <text class="t1cA" x="595" y="200" text-anchor="middle">for a period</text>
+
+        <text class="t1cN" x="30" y="314">Northline today is a pipeline platform, a dashboard stream and a modelling specialist, all inside one team of 7.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - each type has one job and a named way of working with the others; a team trying to be all four at once has every path open</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The four types, and which one Northline is<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>On the Team Topologies site, a <strong>stream-aligned</strong> team works on a flow of work, usually one segment of the business; a <strong>platform</strong> team offers an internal product that speeds up stream-aligned teams; an <strong>enabling</strong> team helps stream-aligned teams overcome obstacles; a <strong>complicated subsystem</strong> team handles work that needs deep specialist expertise. The three interaction modes are collaboration (working together for a period to discover something), X-as-a-Service (one team provides, another consumes) and facilitating (one team helps and mentors another). The authors also stress that a team can only carry so much cognitive load.</p>
+        <p>Northline is all four at once. Priya and Kofi run what is really a platform, the pipeline and the infrastructure. Tom and Sam serve a stream of business questions. Wei and Lena do specialist modelling. Nobody chose this, so every path is open, which is exactly the 21-path problem from Part 2. Session 4 tries one split on the bench and shows what it fixes and what it moves.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>How much weight to put on a practitioner vocabulary<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Team Topologies is a practitioner framework, drawn from its authors' consulting experience, not a research finding, and these pages treat it that way: a useful set of names that makes a conversation about team shape faster. The key-concepts page read for these pages does not mention a team size or Conway's law, though the book builds on Conway; anything about the book beyond that page is reported. Conway's own paper, read at source, is an argument with examples from 1968 systems work, not a measured study. Both are good tools for thinking and weak tools for proving.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Northline's team charter, on one page</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">A charter is the team's definition of itself, short enough to read in two minutes and specific enough to settle an argument. Ana writes Northline's in one sitting with the team (constructed). Write the same page for your own team as you go; if you do not lead one, write it for a team you are in. Sessions 2 and 3 fill in the two lines it points to.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A one-page charter drawn as a sheet with six ruled lines: outcome, members and boundary, what we own, what we do not own, working agreements, and pointers to decision rights and rhythm. The line for what we do not own is highlighted in slate blue. Arrows lead from the last line to session 2 and session 3.">
+        <defs>
+          <filter id="t1dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="41" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <marker id="t1dAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2B1D16" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .t1dH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1dL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t1dS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t1dB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t1dN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t1dH" x="30" y="26">ONE PAGE, SIX LINES, READ IN TWO MINUTES</text>
+
+        <g filter="url(#t1dSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="200" y="44" width="380" height="190" rx="8" transform="rotate(-0.5 390 139)" fill="#FFFFFF"/>
+          <path d="M216 78 L564 78 M216 106 L564 106 M216 134 L564 134 M216 162 L564 162 M216 190 L564 190 M216 218 L564 218" stroke="#DCCBBF" stroke-width="1.2"/>
+          <rect x="210" y="142" width="360" height="24" rx="4" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <path d="M586 206 C640 200 660 170 690 160" marker-end="url(#t1dAr)"/>
+          <path d="M586 214 C640 224 660 228 690 232" marker-end="url(#t1dAr)"/>
+          <rect x="700" y="140" width="140" height="40" rx="8" transform="rotate(1.2 770 160)" fill="#FBF1EA"/>
+          <rect x="700" y="212" width="140" height="40" rx="8" transform="rotate(-1 770 232)" fill="#FBF1EA"/>
+          <path d="M70 120 C80 100 110 96 126 110 C140 124 130 150 110 156 C92 160 74 150 70 136 Z" fill="#FBF1EA"/>
+          <path d="M90 128 L104 140 L130 104" stroke="#9C4A1E" stroke-width="2.4"/>
+        </g>
+
+        <text class="t1dS" x="220" y="72">1 · outcome: what we deliver only together</text>
+        <text class="t1dS" x="220" y="100">2 · members and boundary: exactly who is in</text>
+        <text class="t1dS" x="220" y="128">3 · what we own</text>
+        <text class="t1dB" x="220" y="158">4 · what we do not own, and where it goes</text>
+        <text class="t1dS" x="220" y="184">5 · working agreements, four to six</text>
+        <text class="t1dS" x="220" y="212">6 · decision rights and rhythm: pointers</text>
+        <text class="t1dL" x="770" y="164" text-anchor="middle">session 2</text>
+        <text class="t1dL" x="770" y="236" text-anchor="middle">session 3</text>
+        <text class="t1dS" x="100" y="180" text-anchor="middle">agreed by</text>
+        <text class="t1dS" x="100" y="194" text-anchor="middle">the team</text>
+
+        <text class="t1dN" x="30" y="258">Line 4 is the one most charters skip, and the one that stops a team from absorbing every request sent its way.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the highlighted line is the boundary on work, the same way line 2 is the boundary on people</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Write the outcome as something only the team can deliver.</strong> Use the first question from Part 1. If one person could deliver it alone, it is a job description, not a team outcome. Ana tries three drafts before one passes.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · outcome</span>Northline exists so that merchandising and finance get
+trusted weekly numbers (sales, stock, forecast) by Monday
+09:00, and can ask follow-up questions the same week.
+
+Test: can any one of us deliver this alone?   no</div>
+      </div>
+      <div class="step">
+        <p><strong>List the members, and say who is not in.</strong> Names, not roles. Then the near-misses: the people who feel like members but are not, so nobody waits for them in a decision.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · members and boundary</span>In:      Ana (lead), Priya, Tom, Wei, Sam, Lena, Kofi
+Not in:  the merchandising analyst who sends most requests
+         (a stakeholder: consulted, not a member)
+         the contractor who left in spring (remove from channels)
+Check:   all seven list the same seven names</div>
+      </div>
+      <div class="step">
+        <p><strong>Write what the team owns.</strong> Areas of work, each with a short definition. Keep it to what the team will be held to; vague ownership ("data") is how a team ends up owning everything.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · what we own</span>- The sales and stock pipeline, from source extracts to tables
+- The weekly forecast model and its accuracy report
+- Six standard dashboards (listed in the wiki)
+- Ad hoc analysis for merchandising and finance, up to the
+  intake limit in session 3</div>
+      </div>
+      <div class="step">
+        <p><strong>Write what the team does not own, and where it goes instead.</strong> This is the line that protects the week. Every "no" carries a destination, so it reads as routing, not refusal.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · what we do not own</span>- Source system fixes          -> the store-systems team
+- Marketing attribution models  -> the marketing analytics team
+- One-off data pulls for HR     -> the HR self-serve report
+- New dashboards outside the six -> request, prioritised weekly</div>
+      </div>
+      <div class="step">
+        <p><strong>Agree four to six working agreements.</strong> Specific enough to notice when one is broken. Write them with the team, not for it; an agreement the team did not make is a rule.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · working agreements</span>1. Requests come through the intake, not direct messages
+2. Anything that changes a shared table is announced first
+3. 09:30-12:30 Tuesday and Thursday is focus time: no meetings
+4. A decision made in chat is copied to the decision log
+5. Anyone can say "I do not understand" in any meeting</div>
+      </div>
+      <div class="step">
+        <p><strong>Point to decision rights and the rhythm.</strong> Two lines that say "see the table" for now. Session 2 writes the decision-rights table, session 3 the ritual budget.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · pointers</span>Who decides what:  decision-rights table (session 2)
+Our rhythm:        ritual budget (session 3)
+Review this charter: first Monday of each quarter</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Test it on one real argument.</strong> Ana picks the last disagreement Northline had: whether to build a dashboard the regional managers asked for. The charter answers it in ten seconds (line 4: outside the six, so it goes to the weekly prioritisation). A charter that cannot settle any recent argument is decoration.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 2</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Run the three questions on your team.</strong> Shared outcome, boundary, weekly interdependence. If one fails, write which, and whether you lead a team or a pool.</li>
+      <li><strong>Ask everyone to list the team.</strong> Compare the lists. Every difference is a boundary question for the charter.</li>
+      <li><strong>Count your paths.</strong> n(n-1)/2 for your team now, and for the size it will be in a year.</li>
+      <li><strong>Finish your charter</strong> and bring line 4. Session 2 starts from the decisions it implies.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 1 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Eight analysts share a manager, each assigned to a different business unit, with no work passing between them. What is the best description?</p>
+      <button class="qopt" type="button">A · A team that needs more rituals to bond</button>
+      <button class="qopt" type="button">B · A team with a weak manager</button>
+      <button class="qopt" type="button">C · A pool of specialists: run it with shared standards and a light rhythm, not team rituals built for a shared outcome</button>
+      <button class="qopt" type="button">D · A team, because they share a reporting line</button>
+      <p class="qwhy">A team needs an outcome nobody can deliver alone, a boundary, and work that passes between members. Without interdependence there is no team problem to solve, and adding team rituals only adds meetings.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Northline grows from 7 to 9 people. What happens to its communication paths?</p>
+      <button class="qopt" type="button">A · From 21 to 36: fifteen more pairs who might need to coordinate</button>
+      <button class="qopt" type="button">B · From 7 to 9: one path per person</button>
+      <button class="qopt" type="button">C · From 21 to 23: two new people, two new paths</button>
+      <button class="qopt" type="button">D · They stay the same if the manager does not change</button>
+      <p class="qwhy">n(n-1)/2: 7 x 6 / 2 = 21 and 9 x 8 / 2 = 36. Each new person adds a path to everyone already there, which is why growth that looks small in headcount is large in coordination.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">3 · A colleague says "research proves teams should be under 10, and Dunbar's number explains why". What is accurate?</p>
+      <button class="qopt" type="button">A · True: Dunbar's number is about 10 for work teams</button>
+      <button class="qopt" type="button">B · True: Google found team size was the strongest factor</button>
+      <button class="qopt" type="button">C · False: team size has no effect on coordination</button>
+      <button class="qopt" type="button">D · Dunbar's figure is about social networks and its re-analysis found any single number futile; Google reports team size was not significant in its own study; what is solid is that paths grow with the square of headcount</button>
+      <p class="qwhy">Neither source supports a magic number for work teams. Google's guide lists team size among the factors that did not matter significantly at Google. C overcorrects: the path arithmetic is real, and more people do need more deliberate coordination.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Conway (1968), How do committees invent? Datamation</span><span class="note">Read at source: paths about half the square of the number of people, the argument against assuming manpower adds productivity, and the thesis later called Conway's law</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Lindenfors, Wartel and Lind (2021), Biology Letters; Google re:Work team effectiveness guide</span><span class="note">Read at source: the Dunbar re-analysis and its intervals; Google's 180 teams and team size as not significant, tiered as a company report</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Team Topologies key concepts (Skelton and Pais)</span><span class="note">Read on the authors' site: four team types, three interaction modes, cognitive load; a practitioner framework, not research</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Hackman (2002), Leading Teams; Dunbar's 150</span><span class="note">Reported from publisher listings and summaries; the books and papers were not read</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Northline, Ana and the team</span><span class="note">Constructed for teaching; no number about them is a measurement</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Team or group</b><span>Shared outcome nobody delivers alone, a boundary, work passing between members weekly.</span></div>
+      <div class="cheat-item"><b>Paths</b><span>n(n-1)/2: 7 people 21, 9 people 36. Headcount adds, paths multiply.</span></div>
+      <div class="cheat-item"><b>No magic size</b><span>Dunbar's number is about social networks and contested; Google reports size was not significant.</span></div>
+      <div class="cheat-item"><b>Four shapes</b><span>Stream-aligned, platform, enabling, complicated subsystem (practitioner vocabulary).</span></div>
+      <div class="cheat-item"><b>Conway</b><span>What a team builds copies how the team communicates. Choose the shape on purpose.</span></div>
+      <div class="cheat-item"><b>The charter</b><span>Outcome, members, what we own, what we do not own and where it goes, agreements, pointers.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Northline now knows what it is for and who is in it. Session 2 asks the question that ended both of its last arguments: who decides? A decision-rights table for the eight decisions the team makes every month, and a way to close a disagreement without waiting for the loudest person to give up.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 1 of 6 · learn-team-management-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← Course home</a> &nbsp;·&nbsp; <a href="02-who-decides-what.html">Next: Who decides what →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=15"></script>
+</body>
+</html>

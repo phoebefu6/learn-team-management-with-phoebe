@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 3 of 6. A team's rhythm is a budget: every ritual has a cadence, a length and a list of attendees, and costs person-hours. Price a ritual set, see when it pays (only when it replaces coordination that was happening anyway), read what Mark, Gudith and Klocke 2008 actually found about interrupts, and write a ritual budget line by line.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The team's rhythm and what it costs - learn team management with phoebe">
+<meta property="og:description" content="Session 3 of 6. Rituals priced in person-hours, the replace-do-not-add rule, interrupts at source, and a ritual budget on one sheet.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/courses/03-rhythm-and-cost.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The team's rhythm and what it costs - learn team management with phoebe">
+<meta name="twitter:description" content="Session 3 of 6. Every ritual is a line in a budget, and it pays only when it replaces something.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 3 · The team's rhythm and what it costs - learn team management with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=15">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-team-management-with-phoebe</a> / Session 3 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Team Management with Phoebe · Session 3 of 6</div>
+    <h1>The team's <span class="accent">rhythm</span> and what it costs</h1>
+    <p class="sub">Every stand-up, planning session, retro and review is paid for in the one currency a team cannot print: its members' hours. Tonight we put Northline's rituals on a budget sheet and price each one in person-hours, test the rule that decides whether a ritual earns its place (it has to replace coordination that was happening anyway), read what the research on interrupts actually found rather than what gets quoted, and write a ritual budget the team can defend line by line.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Core</span>
+      <span class="chip audience">Anyone who leads a team</span>
+      <span class="chip audience">Bring last week's calendar</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Budget, replace, interrupts</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: the ritual budget</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">Northline is constructed: an invented 7-person data team led by Ana, with Priya, Tom, Wei, Sam, Lena and Kofi. After session 1 it has a charter, and after session 2 it knows who decides what. Line 6 of the charter still says "our rhythm: see the ritual budget", and there is no budget. Today everyone syncs with everyone whenever something comes up, and Ana is about to add four meetings to fix it. Before she does, she wants to know what they cost and what they buy.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>About the numbers.</strong> Every hour figure on this page comes from the team-size bench you open in session 4. Its rules are stated in the open (a 40-hour week, the ritual formulas below, a fixed cost per communication path) and run on Northline, a constructed team. The numbers are modelled, not measured: they show the shape of a trade-off, and your own team's numbers will differ.</p>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> A way to price any ritual in person-hours, the one test a ritual has to pass before it goes in the calendar, an honest reading of the interrupt research, three ways to protect focus time, and a one-sheet ritual budget for your own team with a row you have deliberately struck out.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the rhythm as a budget</span>
+      <h2>Every ritual is a line in a budget</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">A ritual looks small on one calendar: fifteen minutes here, an hour every other Friday there. On the team's ledger it is multiplied by everyone in the room. Northline's proposed set (a daily stand-up, weekly planning, a fortnightly retro and a fortnightly review) costs each person 210 minutes, 3.5 hours, a week on the bench's rules. Across seven people that is 3.5 h x 7 = 24.5 person-hours a week, more than half of one person's whole week, before a single decision has been made in any of those meetings.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horizontal bars of Northline's weekly person-hours per ritual for 7 people, constructed team on modelled rules. Stand-up 95 minutes each times 7 is 11.1 hours; planning 65 minutes times 7 is 7.6 hours; retro 30 minutes times 7 is 3.5 hours; review 20 minutes times 7 is 2.3 hours. Stand-up and planning grow with team size, retro and review are fixed. Total 24.5 person-hours a week, which is 210 minutes or 3.5 hours each.">
+        <defs>
+          <filter id="t3aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="53" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t3aH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3aL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3aS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t3aB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t3aV { font: 800 18px Inter, sans-serif; fill: #6B3012; }
+          .t3aN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t3aH" x="30" y="26">NORTHLINE'S RITUALS IN PERSON-HOURS A WEEK, 7 PEOPLE (CONSTRUCTED TEAM, MODELLED RULES)</text>
+
+        <g filter="url(#t3aSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="250" y="46" width="443" height="30" rx="4" transform="rotate(-0.3 471 61)" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="250" y="90" width="303" height="30" rx="4" transform="rotate(0.3 401 105)" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="250" y="134" width="140" height="30" rx="4" transform="rotate(-0.4 320 149)" fill="#EBCDB8"/>
+          <rect x="250" y="178" width="93" height="30" rx="4" transform="rotate(0.4 296 193)" fill="#EBCDB8"/>
+          <path d="M40 224 L850 224" stroke="#DCCBBF" stroke-width="1.4"/>
+          <circle cx="800" cy="248" r="12" fill="#FBF1EA"/>
+          <path d="M800 240 L800 248 L806 252 M796 232 L804 232" stroke-width="1.6"/>
+        </g>
+
+        <text class="t3aL" x="40" y="58">Stand-up</text>
+        <text class="t3aS" x="40" y="72">5 x (5 + 2n) = 95 min</text>
+        <text class="t3aB" x="262" y="65">grows with team size</text>
+        <text class="t3aV" x="705" y="67">11.1 h</text>
+        <text class="t3aS" x="782" y="66">95 min x 7</text>
+
+        <text class="t3aL" x="40" y="102">Planning</text>
+        <text class="t3aS" x="40" y="116">30 + 5n = 65 min</text>
+        <text class="t3aB" x="262" y="109">grows with team size</text>
+        <text class="t3aV" x="565" y="111">7.6 h</text>
+        <text class="t3aS" x="628" y="110">65 min x 7</text>
+
+        <text class="t3aL" x="40" y="146">Retro</text>
+        <text class="t3aS" x="40" y="160">60 fortnightly = 30 min/wk</text>
+        <text class="t3aS" x="262" y="153">fixed</text>
+        <text class="t3aV" x="402" y="155">3.5 h</text>
+        <text class="t3aS" x="465" y="154">30 min x 7</text>
+
+        <text class="t3aL" x="40" y="190">Review</text>
+        <text class="t3aS" x="40" y="204">40 fortnightly = 20 min/wk</text>
+        <text class="t3aS" x="262" y="197">fixed</text>
+        <text class="t3aV" x="355" y="199">2.3 h</text>
+        <text class="t3aS" x="418" y="198">20 min x 7</text>
+
+        <text class="t3aL" x="40" y="250">Total</text>
+        <text class="t3aS" x="40" y="264">minutes per person per week</text>
+        <text class="t3aV" x="250" y="252">24.5 person-hours</text>
+        <text class="t3aS" x="440" y="251">= 210 min (3.5 h) each x 7 people</text>
+
+        <text class="t3aN" x="30" y="286">Check: 11.1 + 7.6 + 3.5 + 2.3 = 24.5. Modelled rules on a constructed team; at 9 people it is 4.0 h each.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the two daily and weekly rituals carry two-thirds of the bill, and they are the two that grow with every hire</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Price each ritual: cadence x length x attendees<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Write each ritual as a row.</strong> Cadence, length, who attends, then minutes per person per week. The bench uses four formulas for a team of n people: stand-up 5 x (5 + 2n) minutes a week (five days, a fixed opening plus about two minutes a person), planning 30 + 5n, retro 60 minutes fortnightly (30 a week), review 40 minutes fortnightly (20 a week). For Northline's seven: 95 + 65 + 30 + 20 = 210 minutes, 3.5 hours each.</p>
+        <p><strong>Multiply by the people in the room.</strong> That is the number a calendar hides. Stand-up 95 x 7 = 665 minutes, 11.1 person-hours. Planning 65 x 7 = 455 minutes, 7.6. Retro 30 x 7 = 210 minutes, 3.5. Review 20 x 7 = 140 minutes, 2.3. Together, 24.5 person-hours a week (constructed team, modelled rules).</p>
+        <p><strong>Notice which lines grow.</strong> Stand-up and planning have n in the formula: every person adds time to everyone's meeting. Retro and review do not. Add Mo and Jun in session 4 and the stand-up becomes 5 x (5 + 18) = 115 minutes, planning 30 + 45 = 75, and the set goes from 210 to 240 minutes, 4.0 h each, across nine people instead of seven.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What each ritual is for, in one line<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A ritual without a one-line job description drifts into a status meeting. Write the job before the invite:</p>
+        <ul>
+          <li><strong>Stand-up:</strong> surface blockers today so nobody waits until tomorrow to ask for help.</li>
+          <li><strong>Planning:</strong> agree what the team works on this week, so individual "what next?" questions have an answer.</li>
+          <li><strong>Retro:</strong> change one thing about how the team works, based on the last two weeks.</li>
+          <li><strong>Review:</strong> show finished work to the people it is for, and hear what they need next.</li>
+        </ul>
+        <p>How to run each of these meetings well, from the agenda to the closing decision, is facilitation, taught in <a href="https://phoebefu6.github.io/learn-facilitation-with-phoebe/courses/03-diverge-converge-decide.html">Facilitation ↗</a>. Using AI to summarise and synthesise meetings is in <a href="https://phoebefu6.github.io/learn-ai-leadership-with-phoebe/courses/b7-meetings-synthesis.html">AI Leadership: meetings and synthesis ↗</a>. Here the question is only which meetings the team runs and what the set costs.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The stand-up that grew to 40 minutes.</strong> A common pattern: a stand-up starts at fifteen minutes with six people. The team grows, nobody changes the format, and every new person adds their round of updates plus the side discussions their work starts. A year later it runs forty minutes daily, people join with cameras off and work in another window, and the blockers it exists to surface come up in direct messages afterwards. The formula 5 + 2n predicted the growth; the fix is to price it at each hire and change the shape (split it, cap updates at blockers only, or move updates into writing) before it becomes the most expensive line in the budget.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers replace, do not add</span>
+      <h2>A ritual pays only when it replaces coordination that was happening anyway</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">A team without rituals is not a team without coordination. It coordinates ad hoc: a quick call here, a long thread there, a question that interrupts someone's afternoon. The bench prices that too. A ritual set is a trade, not a cost: it is worth 3.5 hours a person only if it removes more than 3.5 hours of coordination that was going to happen anyway. Whether it does depends on how heavy the ad hoc load really was.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One person's 40-hour week at Northline drawn three ways, constructed team on modelled rules. Ad hoc at 60 minutes a path: coordination 6.0 hours, interrupts 2.6, focus 31.4. With the ritual set: rituals 3.5, coordination 2.0, interrupts 2.6, focus 31.9, half an hour more than ad hoc at 60. Ad hoc at 30 minutes a path: coordination 3.0, interrupts 2.6, focus 34.4, so the ritual set would cost 2.5 hours.">
+        <defs>
+          <filter id="t3bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="59" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t3bH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3bL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3bS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t3bV { font: 800 16px Inter, sans-serif; fill: #6B3012; }
+          .t3bA { font: 700 11px Inter, sans-serif; fill: #9C4A1E; }
+          .t3bN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t3bH" x="30" y="26">ONE PERSON'S 40-HOUR WEEK AT NORTHLINE, THREE WAYS (MODELLED, CONSTRUCTED TEAM)</text>
+
+        <g filter="url(#t3bSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="200" y="48" width="96" height="36" rx="3" fill="#DCCBBF"/>
+          <rect x="296" y="48" width="42" height="36" rx="3" fill="#FBF1EA"/>
+          <rect x="338" y="48" width="502" height="36" rx="3" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="200" y="108" width="56" height="36" rx="3" fill="#EBCDB8"/>
+          <rect x="256" y="108" width="32" height="36" rx="3" fill="#DCCBBF"/>
+          <rect x="288" y="108" width="42" height="36" rx="3" fill="#FBF1EA"/>
+          <rect x="330" y="108" width="510" height="36" rx="3" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="200" y="168" width="48" height="36" rx="3" fill="#DCCBBF"/>
+          <rect x="248" y="168" width="42" height="36" rx="3" fill="#FBF1EA"/>
+          <rect x="290" y="168" width="550" height="36" rx="3" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="200" y="222" width="14" height="12" rx="2" fill="#EBCDB8"/>
+          <rect x="320" y="222" width="14" height="12" rx="2" fill="#DCCBBF"/>
+          <rect x="460" y="222" width="14" height="12" rx="2" fill="#FBF1EA"/>
+          <rect x="640" y="222" width="14" height="12" rx="2" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <circle cx="846" cy="22" r="10" fill="#FBF1EA"/>
+          <path d="M846 15 L846 22 L851 25" stroke-width="1.6"/>
+        </g>
+
+        <text class="t3bL" x="40" y="62">Ad hoc, 60 min</text>
+        <text class="t3bS" x="40" y="77">per path, no rituals</text>
+        <text class="t3bL" x="248" y="71" text-anchor="middle">6.0</text>
+        <text class="t3bL" x="317" y="71" text-anchor="middle">2.6</text>
+        <text class="t3bV" x="352" y="72">31.4 h focus</text>
+        <text class="t3bA" x="828" y="71" text-anchor="end">6 paths x 60 min = 6.0 h</text>
+
+        <text class="t3bL" x="40" y="122">Ritual set</text>
+        <text class="t3bS" x="40" y="137">paths drop to 20 min</text>
+        <text class="t3bL" x="228" y="131" text-anchor="middle">3.5</text>
+        <text class="t3bL" x="272" y="131" text-anchor="middle">2.0</text>
+        <text class="t3bL" x="309" y="131" text-anchor="middle">2.6</text>
+        <text class="t3bV" x="344" y="132">31.9 h focus</text>
+        <text class="t3bA" x="828" y="131" text-anchor="end">+0.5 h vs ad hoc at 60</text>
+
+        <text class="t3bL" x="40" y="182">Ad hoc, 30 min</text>
+        <text class="t3bS" x="40" y="197">per path, no rituals</text>
+        <text class="t3bL" x="224" y="191" text-anchor="middle">3.0</text>
+        <text class="t3bL" x="269" y="191" text-anchor="middle">2.6</text>
+        <text class="t3bV" x="304" y="192">34.4 h focus</text>
+        <text class="t3bA" x="828" y="191" text-anchor="end">the set would cost 2.5 h here</text>
+
+        <text class="t3bL" x="220" y="233">rituals</text>
+        <text class="t3bL" x="340" y="233">coordination</text>
+        <text class="t3bL" x="480" y="233">interrupts, team mean</text>
+        <text class="t3bL" x="660" y="233">focus: what is left</text>
+
+        <text class="t3bN" x="30" y="262">Interrupts 2.6 h = 40 - 6.0 - 31.4 (seeded team mean). The ritual set pays only when ad hoc load is high.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the same 3.5 hours of meetings buys half an hour back in one team and costs two and a half in another</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The bench rule, and the half hour it buys<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Without rituals.</strong> On the bench, each communication path costs each of its two people 60 minutes a week when coordination is ad hoc. In a team of 7 everyone sits on 6 paths, so 6 x 60 = 360 minutes, 6.0 hours of coordination each. After interrupts, Northline's mean focus time is 31.4 hours a person.</p>
+        <p><strong>With the ritual set.</strong> The rituals cost 3.5 hours each, and because blockers, priorities and updates now have a home, each path drops to 20 minutes: 6 x 20 = 120 minutes, 2.0 hours. Rituals plus coordination is 5.5 hours, against 6.0 before. Mean focus rises from 31.4 to 31.9 hours, half an hour a person (modelled on a constructed team).</p>
+        <p><strong>When the ad hoc load is lighter.</strong> Run the same team at 30 minutes per path and coordination without rituals is 3.0 hours; focus is 34.4. Adding the ritual set still leaves 31.9, so the set now costs 34.4 - 31.9 = 2.5 hours a person. Same meetings, opposite verdict. The ritual set does not create focus time; it can only convert ad hoc coordination into scheduled coordination, and that is worth doing only when there was a lot of ad hoc coordination to convert.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Estimate your team's real ad hoc load<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The 60-minute and 30-minute figures are bench rules, not measurements. Your team has its own number, and you can estimate it in a week without any tool:</p>
+        <ul>
+          <li><strong>Count syncs for one normal week.</strong> Ask each person to tally every unplanned call, thread longer than a few messages and "got a minute?" conversation with a teammate, with a rough length.</li>
+          <li><strong>Sort them by what they were for.</strong> Blockers, "what should I work on next", updates someone needed, decisions, help with a problem. Each kind maps to the ritual that could absorb it, or to none.</li>
+          <li><strong>Compare the total with the ritual cost.</strong> If the week's ad hoc coordination is well above what the rituals would cost, a set will pay. If it is already light, adding rituals adds hours.</li>
+          <li><strong>Keep what no ritual would replace.</strong> Pairing on a hard problem is ad hoc and valuable. The goal is fewer accidental syncs, not zero conversation.</li>
+        </ul>
+        <p>The count is noisy and one week can be unusual. That is fine: the decision needs an order of magnitude, not a precise figure.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The status meeting that replaced nothing.</strong> A familiar pattern: a team already posts written updates in a shared channel every afternoon, and someone adds a weekly status meeting "so we are all aligned". Each person reads out what they already wrote. No coordination moved into the meeting, because none was left outside it. The meeting is pure cost, multiplied by everyone in the room, every week. The test is one question per ritual: what ad hoc coordination stopped happening when we started this? If the answer is nothing, it goes.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers interrupts and focus</span>
+      <h2>Interrupts are paid for later, in stress</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Interrupts are the coordination nobody scheduled. On the bench they are seeded draws, and they land unevenly: over 12 modelled weeks Ana averages 279.2 minutes of interrupts a week and Sam 232.1, while Wei gets 84.6 and Lena 90.8. The lead and the person stakeholders know best absorb the most. What interrupts actually cost a person is a narrower question than the famous figures suggest, and the study usually behind them found something different.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels showing where an interrupt lands. Left, direct messages: a merchandising lead and a finance lead each send requests straight to several of Northline's seven people, so seven arrows fan out across the team. Right, through an intake: both stakeholders send to one intake queue, which routes to one person on a weekly rotation, while the other six sit inside a focus block that no request reaches.">
+        <defs>
+          <filter id="t3cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="61" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <marker id="t3cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2B1D16" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .t3cH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3cL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3cS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t3cB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t3cN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t3cH" x="30" y="26">WHERE AN INTERRUPT LANDS: DIRECT MESSAGE VERSUS ONE INTAKE (NORTHLINE, CONSTRUCTED)</text>
+
+        <g filter="url(#t3cSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="44" width="400" height="172" rx="12" transform="rotate(-0.3 230 130)" fill="#FEF2F2" stroke="#FCA5A5"/>
+          <rect x="450" y="44" width="400" height="172" rx="12" transform="rotate(0.3 650 130)" fill="#FBF1EA"/>
+          <rect x="46" y="76" width="90" height="28" rx="6" transform="rotate(-1.5 91 90)" fill="#FFFFFF"/>
+          <rect x="46" y="140" width="90" height="28" rx="6" transform="rotate(1.2 91 154)" fill="#FFFFFF"/>
+          <path d="M138 90 L331 66 M138 90 L331 110 M138 90 L331 154 M138 154 L331 88 M138 154 L331 132 M138 154 L331 154 M138 154 L331 176" stroke="#991B1B" stroke-width="1.4" marker-end="url(#t3cAr)"/>
+          <circle cx="340" cy="66" r="7" fill="#FFFFFF"/><circle cx="340" cy="88" r="7" fill="#FFFFFF"/><circle cx="340" cy="110" r="7" fill="#FFFFFF"/><circle cx="340" cy="132" r="7" fill="#FFFFFF"/><circle cx="340" cy="154" r="7" fill="#FFFFFF"/><circle cx="340" cy="176" r="7" fill="#FFFFFF"/><circle cx="340" cy="198" r="7" fill="#FFFFFF"/>
+          <rect x="466" y="76" width="90" height="28" rx="6" transform="rotate(1.4 511 90)" fill="#FFFFFF"/>
+          <rect x="466" y="140" width="90" height="28" rx="6" transform="rotate(-1.2 511 154)" fill="#FFFFFF"/>
+          <path d="M558 92 L596 120 M558 152 L596 140" marker-end="url(#t3cAr)"/>
+          <rect x="600" y="108" width="90" height="44" rx="8" transform="rotate(-1 645 130)" fill="#FFFFFF"/>
+          <path d="M692 116 L713 84" marker-end="url(#t3cAr)"/>
+          <circle cx="724" cy="74" r="9" fill="#3E5C8A" stroke="#2A4165"/>
+          <rect x="716" y="104" width="120" height="102" rx="12" stroke="#3E5C8A" stroke-dasharray="7 6" stroke-width="1.6" fill="#E9EEF6"/>
+          <circle cx="746" cy="148" r="7" fill="#FFFFFF"/><circle cx="776" cy="148" r="7" fill="#FFFFFF"/><circle cx="806" cy="148" r="7" fill="#FFFFFF"/>
+          <circle cx="746" cy="174" r="7" fill="#FFFFFF"/><circle cx="776" cy="174" r="7" fill="#FFFFFF"/><circle cx="806" cy="174" r="7" fill="#FFFFFF"/>
+          <circle cx="500" cy="194" r="10" fill="#FFFFFF"/>
+          <path d="M500 187 L500 194 L505 197" stroke-width="1.6"/>
+        </g>
+
+        <text class="t3cL" x="46" y="64">DIRECT MESSAGES</text>
+        <text class="t3cS" x="91" y="94" text-anchor="middle">merch lead</text>
+        <text class="t3cS" x="91" y="158" text-anchor="middle">finance lead</text>
+        <text class="t3cS" x="354" y="70">Ana</text>
+        <text class="t3cS" x="354" y="92">Priya</text>
+        <text class="t3cS" x="354" y="114">Tom</text>
+        <text class="t3cS" x="354" y="136">Wei</text>
+        <text class="t3cS" x="354" y="158">Sam</text>
+        <text class="t3cS" x="354" y="180">Lena</text>
+        <text class="t3cS" x="354" y="202">Kofi</text>
+
+        <text class="t3cL" x="466" y="64">THROUGH AN INTAKE</text>
+        <text class="t3cS" x="511" y="94" text-anchor="middle">merch lead</text>
+        <text class="t3cS" x="511" y="158" text-anchor="middle">finance lead</text>
+        <text class="t3cL" x="645" y="128" text-anchor="middle">intake</text>
+        <text class="t3cS" x="645" y="143" text-anchor="middle">one queue</text>
+        <text class="t3cB" x="740" y="70">on rotation</text>
+        <text class="t3cS" x="740" y="86">rotates weekly</text>
+        <text class="t3cL" x="728" y="124">focus block</text>
+        <text class="t3cS" x="728" y="198">no pings</text>
+
+        <text class="t3cS" x="46" y="236">any of seven people can be pinged, at any hour</text>
+        <text class="t3cS" x="466" y="236">one person absorbs the switch, six keep the block</text>
+
+        <text class="t3cN" x="30" y="264">Same requests, same volume: the intake changes who absorbs each interrupt and when, not how many arrive.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - a direct message picks its target at random from whoever answers; an intake picks one person on purpose and protects the rest</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>What Mark, Gudith and Klocke (2008) found, read at source<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The finding.</strong> In a lab study at CHI 2008, Gloria Mark, Daniela Gudith and Ulrich Klocke interrupted people during an email task. People who were interrupted completed the interrupted tasks in less time, with no difference in quality. They paid for it in more stress, higher frustration, more time pressure and more effort. Whether the interruption was related to the task or not made no difference.</p>
+        <p><strong>What it means for a team.</strong> An interrupt does not show up as slower or worse work on the day. People compensate by working faster, and the cost lands on them as strain. A lead who looks only at output will see nothing wrong while the most-interrupted people on the team carry the bill.</p>
+        <p><strong>How far it reaches.</strong> One lab study, an email task, participants mostly German university students. It is a careful result about short-term speed and reported stress, not a measurement of a working team over months.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Two figures that are not from this paper, and three ways to protect focus<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>"23 minutes to get back on task."</strong> This figure is widely attributed to Gloria Mark's research, but it does not appear in the 2008 paper read for this page. Its source was not verified, so it is not taught here as a fact.</p>
+        <p><strong>"Multitasking costs 40 percent of productivity."</strong> Quoted everywhere, traced to no source read for this page. Not verified, not taught.</p>
+        <p><strong>Protecting focus is a design choice, not a personal habit.</strong> Three moves that change where interrupts land:</p>
+        <ul>
+          <li><strong>Team-wide focus blocks.</strong> The same hours for everyone, no meetings, no pings except for incidents. A block only one person keeps is a block everyone else books over.</li>
+          <li><strong>A request intake.</strong> Stakeholder requests go to one queue, triaged by one person on rotation, instead of to whoever answers first. The interrupt still happens; it lands on one person on purpose. Session 6 builds the rotation.</li>
+          <li><strong>Batched questions.</strong> Non-urgent questions to a teammate go into a thread they answer at a set time, or into the stand-up, rather than a "got a minute?" mid-afternoon.</li>
+        </ul>
+        <p>Stress here means workload: hours, interrupts and who carries them. Nothing on this page is medical advice; the body side belongs to the Stress Control course planned on the <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe hub ↗</a>.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The most helpful person becomes the router.</strong> A common pattern: one analyst answers messages fastest, so stakeholders learn to message them first, and teammates do the same. Within months they spend their days forwarding questions and context to the right person, their own work slips to evenings, and their output still looks fine, exactly the pattern the 2008 study describes, at a larger scale. Nobody decided this. An intake with a rotation makes the same job visible, shared and bounded.</p>
+    </div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Northline's ritual budget, line by line</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Ana writes Northline's ritual budget with the team on one sheet: every ritual, what it costs in person-hours, and what ad hoc coordination it replaces. The sync counts are a constructed week. Write the same sheet for your own team as you go, using your own calendar and your own week of counts; it becomes line 6 of the charter you wrote in session 1.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Northline's ritual budget sheet with columns ritual, cadence, minutes a week per person, people, person-hours and replaces. Stand-up, daily, 95 minutes, 7 people, 11.1 person-hours, replaces 22 blocker pings. Planning, weekly, 65, 7, 7.6, replaces 14 what-next asks. Retro, fortnightly, 30, 7, 3.5, replaces 8 how-did-it-go threads. Review, fortnightly, 20, 7, 2.3, replaces 4 demo requests. Status meeting, weekly, 30, 7, 3.5, replaces nothing because updates are already written; this row is struck through. Kept total 24.5 person-hours replacing 48 syncs a week. Counts are constructed.">
+        <defs>
+          <filter id="t3dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="67" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t3dH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3dL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t3dS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t3dB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t3dV { font: 800 16px Inter, sans-serif; fill: #6B3012; }
+          .t3dA { font: 700 11px Inter, sans-serif; fill: #9C4A1E; }
+          .t3dN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t3dH" x="30" y="26">NORTHLINE'S RITUAL BUDGET, ONE SHEET (CONSTRUCTED COUNTS, MODELLED MINUTES)</text>
+
+        <g filter="url(#t3dSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="30" y="40" width="820" height="210" rx="8" transform="rotate(-0.3 440 145)" fill="#FFFFFF"/>
+          <rect x="628" y="48" width="212" height="196" rx="6" fill="#E9EEF6" stroke="#3E5C8A" stroke-width="1.6"/>
+          <path d="M44 78 L836 78" stroke-width="1.4"/>
+          <path d="M44 106 L836 106 M44 132 L836 132 M44 158 L836 158 M44 184 L836 184" stroke="#DCCBBF" stroke-width="1.2"/>
+          <path d="M44 210 L836 210 M44 214 L836 214" stroke-width="1.2"/>
+          <path data-strike="1" d="M42 195 C240 192 520 197 830 193" stroke="#9C4A1E" stroke-width="2.4"/>
+          <path d="M776 276 L828 262 L834 268 L782 282 Z M776 276 L770 286 L782 282" stroke-width="1.6" fill="#FBF1EA"/>
+        </g>
+
+        <text class="t3dA" x="48" y="66">RITUAL</text>
+        <text class="t3dA" x="190" y="66">CADENCE</text>
+        <text class="t3dA" x="310" y="66">MIN / WK</text>
+        <text class="t3dA" x="400" y="66">PEOPLE</text>
+        <text class="t3dA" x="480" y="66">PERSON-HOURS</text>
+        <text class="t3dA" x="640" y="66">REPLACES (A WEEK)</text>
+
+        <text class="t3dL" x="48" y="97">Stand-up</text>
+        <text class="t3dS" x="190" y="97">daily, 5 a week</text>
+        <text class="t3dS" x="310" y="97">95</text>
+        <text class="t3dS" x="400" y="97">7</text>
+        <text class="t3dL" x="480" y="97">11.1</text>
+        <text class="t3dB" x="640" y="97">22 blocker pings</text>
+
+        <text class="t3dL" x="48" y="123">Planning</text>
+        <text class="t3dS" x="190" y="123">weekly</text>
+        <text class="t3dS" x="310" y="123">65</text>
+        <text class="t3dS" x="400" y="123">7</text>
+        <text class="t3dL" x="480" y="123">7.6</text>
+        <text class="t3dB" x="640" y="123">14 "what next?" asks</text>
+
+        <text class="t3dL" x="48" y="149">Retro</text>
+        <text class="t3dS" x="190" y="149">fortnightly</text>
+        <text class="t3dS" x="310" y="149">30</text>
+        <text class="t3dS" x="400" y="149">7</text>
+        <text class="t3dL" x="480" y="149">3.5</text>
+        <text class="t3dB" x="640" y="149">8 "how did it go" threads</text>
+
+        <text class="t3dL" x="48" y="175">Review</text>
+        <text class="t3dS" x="190" y="175">fortnightly</text>
+        <text class="t3dS" x="310" y="175">20</text>
+        <text class="t3dS" x="400" y="175">7</text>
+        <text class="t3dL" x="480" y="175">2.3</text>
+        <text class="t3dB" x="640" y="175">4 demo requests</text>
+
+        <text class="t3dS" x="48" y="201">Status meeting</text>
+        <text class="t3dS" x="190" y="201">weekly</text>
+        <text class="t3dS" x="310" y="201">30</text>
+        <text class="t3dS" x="400" y="201">7</text>
+        <text class="t3dS" x="480" y="201">3.5</text>
+        <text class="t3dS" x="640" y="201">nothing: updates are written</text>
+
+        <text class="t3dL" x="48" y="236">Kept</text>
+        <text class="t3dS" x="190" y="236">four rituals</text>
+        <text class="t3dS" x="310" y="236">210</text>
+        <text class="t3dS" x="400" y="236">7</text>
+        <text class="t3dV" x="480" y="238">24.5</text>
+        <text class="t3dB" x="640" y="236">48 syncs</text>
+
+        <text class="t3dN" x="30" y="284">Counts are constructed. A row with nothing under "replaces" only adds hours.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the column that decides the budget is the last one: a ritual that replaces nothing is struck, whatever it costs</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>List every recurring meeting the team runs or is about to run.</strong> Include the ones that feel too small to count and the one somebody else set up. Write the cadence, the length and who attends, straight from the calendar.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · list the rituals</span>Ritual          Cadence        Length   Who
+Stand-up        daily, 5/wk    19 min   all 7
+Planning        weekly         65 min   all 7
+Retro           fortnightly    60 min   all 7
+Review          fortnightly    40 min   all 7 + stakeholders
+Status meeting  weekly         30 min   all 7
+
+(Stand-up 5 + 2 x 7 = 19 min a day; minutes are the bench's
+rules, the status meeting is constructed)</div>
+      </div>
+      <div class="step">
+        <p><strong>Price each one in person-hours.</strong> Minutes per person per week, then times the people in the room. Show the arithmetic so anyone on the team can check it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · price each line</span>Stand-up        19 x 5 = 95 min  x 7 = 665 min = 11.1 h
+Planning        65 min           x 7 = 455 min =  7.6 h
+Retro           60 / 2 = 30 min  x 7 = 210 min =  3.5 h
+Review          40 / 2 = 20 min  x 7 = 140 min =  2.3 h
+Status meeting  30 min           x 7 = 210 min =  3.5 h
+
+Four rituals: 210 min each = 3.5 h x 7 = 24.5 person-hours
+With status:  240 min each = 4.0 h x 7 = 28.0 person-hours</div>
+      </div>
+      <div class="step">
+        <p><strong>Count the ad hoc syncs each one replaces.</strong> Ana asks everyone to tally one week of unplanned syncs and sort them by what they were for. The counts below are a constructed week.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · what each line replaces (constructed week)</span>Blockers raised by DM or call         22  -&gt; stand-up
+"What should I work on next?"         14  -&gt; planning
+"How did that release go?" threads     8  -&gt; retro
+Stakeholder "can you show me" asks     4  -&gt; review
+Status updates someone needed          0  -&gt; status meeting
+                                     ----
+                                      48 syncs a week</div>
+      </div>
+      <div class="step">
+        <p><strong>Drop or shrink one ritual that replaces nothing.</strong> The status meeting replaces zero syncs, because the team already posts written updates every afternoon. It goes. If a ritual replaces a little, shrink it instead of dropping it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · strike the line</span>STRUCK  Status meeting   3.5 person-hours a week back
+        Reason: replaces 0 syncs; written updates already
+        cover it (constructed count)
+WATCH   Stand-up: 11.1 h, the biggest line, grows with every
+        hire. Rule: blockers only, updates stay in writing.</div>
+      </div>
+      <div class="step">
+        <p><strong>Set two focus blocks for the whole team.</strong> Same hours for everyone, no meetings inside them, requests wait in the intake. Put them where the rituals are not, so the week has long unbroken stretches.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · focus blocks</span>Focus:  Tuesday 09:30-12:30 and Thursday 09:30-12:30
+        no meetings, no DMs except incidents
+Intake: stakeholder requests go to the intake queue;
+        one person on rotation triages (session 6)
+Batch:  non-urgent questions go in the team thread,
+        answered after stand-up</div>
+      </div>
+      <div class="step">
+        <p><strong>Write the budget into the charter's line 6.</strong> Replace the pointer with the real thing: the kept rituals, the total, and the date the team checks it again.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · charter line 6</span>6 · Our rhythm (ritual budget)
+    Stand-up daily, planning weekly, retro and review
+    fortnightly: 3.5 h each, 24.5 person-hours a week.
+    Replaces about 48 ad hoc syncs (constructed week).
+    Focus blocks Tue and Thu 09:30-12:30.
+    Re-price at every hire and every quarter; any ritual
+    that replaces nothing is struck.</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Re-price at every hire.</strong> The budget is right for seven people. When Mo and Jun join, the same four rituals cost 240 minutes each, 4.0 h, and the team has 36 paths instead of 21. Session 4 runs exactly that on the bench.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 4</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Price your rituals.</strong> Every recurring team meeting, in minutes per person per week and in person-hours. Write the total next to your team size.</li>
+      <li><strong>Count one week of ad hoc syncs.</strong> Ask the team to tally unplanned syncs with a rough length and what each was for. Sort them by the ritual that could absorb them.</li>
+      <li><strong>Strike or shrink one line.</strong> Find the ritual that replaces the least and drop it or cut it, and write down the hours it gives back.</li>
+      <li><strong>Agree two focus blocks</strong> with the team and write the budget into line 6 of your charter. Bring it to session 4.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 3 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">1 · Planning on the bench costs 30 + 5n minutes a week per person. What does it cost Northline's team of 7 each week?</p>
+      <button class="qopt" type="button">A · 65 minutes each x 7 people = 455 minutes, about 7.6 person-hours</button>
+      <button class="qopt" type="button">B · 65 minutes, because it is one meeting</button>
+      <button class="qopt" type="button">C · 35 minutes each, about 4.1 person-hours</button>
+      <button class="qopt" type="button">D · 30 minutes, because the 5n part is optional</button>
+      <p class="qwhy">30 + 5 x 7 = 65 minutes per person, and seven people sit in it: 65 x 7 = 455 minutes, 7.6 person-hours. A calendar shows one 65-minute meeting; the team pays it seven times.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · On the bench, when does Northline's ritual set cost focus time instead of saving it?</p>
+      <button class="qopt" type="button">A · Never: rituals always save time</button>
+      <button class="qopt" type="button">B · Only when the team has more than nine people</button>
+      <button class="qopt" type="button">C · When the ad hoc load is low: at 30 minutes per path the team has 34.4 h of focus without rituals and 31.9 h with them, so the set costs 2.5 h each</button>
+      <button class="qopt" type="button">D · Always: any meeting is lost focus time</button>
+      <p class="qwhy">The set costs 3.5 h a person and cuts each path from its ad hoc cost to 20 minutes. At 60 minutes ad hoc that saves 4.0 h and nets +0.5 h; at 30 minutes it saves only 1.0 h, so the set loses 2.5 h. A ritual pays only when it replaces coordination that was happening anyway (modelled, constructed team).</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · What did Mark, Gudith and Klocke (2008) actually find about interrupted work?</p>
+      <button class="qopt" type="button">A · It takes 23 minutes to get back on task after an interruption</button>
+      <button class="qopt" type="button">B · Interrupted people finished faster with no difference in quality, but reported more stress, frustration, time pressure and effort</button>
+      <button class="qopt" type="button">C · Interruptions cut productivity by 40 percent</button>
+      <button class="qopt" type="button">D · Interrupted work was slower and of lower quality</button>
+      <p class="qwhy">The lab study (email task, mostly German university students) found people compensated by working faster and paid in strain. The 23-minute figure is not from this paper and the 40 percent claim is not verified; neither is taught as fact.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Mark, G., Gudith, D., Klocke, U. (2008). The cost of interrupted work: more speed and stress. CHI 2008: 107-110</span><span class="note">Read at source: faster completion, no quality difference, more stress, frustration, time pressure and effort; context made no difference; lab study, email task, mostly German university students</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Team-size bench rules and canon</span><span class="note">Modelled on a constructed team: ritual formulas, 60 or 20 minutes per path, seeded interrupts; 3.5 h, 2.0 h, 6.0 h, 31.4 h, 31.9 h and 34.4 h are bench outputs, not measurements</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">"23 minutes to get back on task"; "multitasking costs 40 percent"</span><span class="note">Not verified; the 23-minute figure is not in the 2008 paper; neither is taught as fact</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Northline, Ana and the team; the week of sync counts; the status meeting</span><span class="note">Constructed for teaching; no number about them is a measurement</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Price a ritual</b><span>Minutes per person per week x people in the room. Northline's set: 3.5 h x 7 = 24.5 person-hours.</span></div>
+      <div class="cheat-item"><b>What grows</b><span>Stand-up 5 x (5 + 2n) and planning 30 + 5n grow with every hire; retro and review do not.</span></div>
+      <div class="cheat-item"><b>Replace, do not add</b><span>A ritual pays only when it removes ad hoc coordination. Ask what stopped happening when it started.</span></div>
+      <div class="cheat-item"><b>Same set, two verdicts</b><span>Bench: +0.5 h at 60 ad hoc minutes per path; -2.5 h at 30. Count your own syncs first.</span></div>
+      <div class="cheat-item"><b>Interrupts</b><span>Mark et al. 2008: faster, same quality, more stress. "23 minutes" and "40 percent" are not verified.</span></div>
+      <div class="cheat-item"><b>Protect focus</b><span>Team-wide focus blocks, one request intake with a rotation, batched questions.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Northline has a charter, a decision-rights table and a ritual budget. Session 4 puts all of it on the bench: four team designs side by side in hours, what two new hires really add, whether a split helps, and what happens to the week when Priya leaves.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 3 of 6 · learn-team-management-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="02-who-decides-what.html">← Prev: Who decides what</a> &nbsp;·&nbsp; <a href="04-the-team-size-bench.html">Next: The team-size bench →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=15"></script>
+</body>
+</html>

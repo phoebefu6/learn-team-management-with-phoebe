@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 4 of 6. The team-size bench: communication paths computed exactly, a constructed 7-person data team's week modelled hour by hour under four designs, the late-project anti-lever that tests Brooks's law on the model's own rules, and a break button where the one person who knows the pipeline leaves.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The team-size bench - learn team management with phoebe">
+<meta property="og:description" content="Session 4 of 6. Paths, meeting hours, focus hours, handoffs and the bus factor for four team designs, computed in your browser.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/courses/04-the-team-size-bench.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The team-size bench - learn team management with phoebe">
+<meta name="twitter:description" content="Session 4 of 6. Four team designs, a late project, and the person who knows everything leaving.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-team-management-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 4 · The team-size bench - learn team management with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=15">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-team-management-with-phoebe</a> / Session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Team Management with Phoebe · Session 4 of 6</div>
+    <h1>The <span class="accent">team-size</span> bench</h1>
+    <p class="sub">Sessions 1 to 3 made three claims: paths grow with the square of headcount, a ritual set pays only when it replaces ad hoc coordination, and the shape of a team decides where the work lands. Tonight they get hours. The bench computes Northline's communication paths exactly and models every person's week under four designs: seven people coordinating ad hoc, seven with a ritual set, a split into four and three, and nine after two hires. Then it tries the move every late project is tempted by, adding two people, and the one every team fears, the person who knows the pipeline leaving. Every number carries a tag saying whether it is exact or modelled.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Bench night</span>
+      <span class="chip audience">Bring your team's size and rituals</span>
+      <span class="chip audience">No code tonight, all clicking</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:2">3-12 · How a week becomes numbers</span>
+      <span class="a3" style="flex:6">12-38 · The bench, design by design</span>
+      <span class="a4" style="flex:2">38-45 · Brooks traced, and Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">Northline is constructed: seven invented people, a declared map of who knows which of seven work areas, and a set of rules for how a week is spent, all printed on the widget. That makes the bench honest about what it is. It cannot tell you how your team spends its week. It can show, on stated rules you can argue with, which way each design pushes the numbers and who in the team pays for it.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">exact = arithmetic on the declared team and map</span>
+      <span class="pill">modelled = a stated rule, applied to constructed people</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> A way to price your team's week in five lines, the honest size of what a ritual set and a split each buy and who pays for them, the shape of the late-project trap with the week it stops being a trap, and a bus factor you can compute for your own team on one sheet.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers what the bench computes</span>
+      <h2>How a week becomes numbers</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">Every person starts with a 40-hour week. The bench takes four costs out of it and calls what is left focus time: rituals, coordination along each path the person sits on, handoffs across a team boundary, and interrupts. Two numbers are exact: the path count and the bus factor, both arithmetic on the declared team. Everything measured in hours is modelled.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One person's 40-hour week drawn as a long bar cut into five pieces: rituals, coordination, handoffs, interrupts and focus. Under each piece, the rule that sets it. Paths and bus factor are tagged exact on the right; the hours are tagged modelled.">
+        <defs>
+          <filter id="t4aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="43" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="t4aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#9C4A1E" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .t4aH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4aL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4aS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t4aB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t4aA { font: 700 11px Inter, sans-serif; fill: #9C4A1E; }
+          .t4aN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t4aH" x="30" y="26">ONE PERSON'S 40-HOUR WEEK, AND THE RULE BEHIND EACH SLICE</text>
+
+        <g filter="url(#t4aSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="56" width="70" height="44" rx="4" fill="#EBCDB8"/>
+          <rect x="110" y="56" width="40" height="44" rx="4" fill="url(#t4aHc)"/>
+          <rect x="150" y="56" width="20" height="44" rx="4" fill="#DCCBBF"/>
+          <rect x="170" y="56" width="56" height="44" rx="4" fill="#FBF1EA"/>
+          <rect x="226" y="56" width="420" height="44" rx="4" fill="#E9EEF6" stroke="#3E5C8A"/>
+          <rect x="40" y="129" width="14" height="12" rx="2" fill="#EBCDB8"/>
+          <rect x="40" y="161" width="14" height="12" rx="2" fill="url(#t4aHc)"/>
+          <rect x="40" y="193" width="14" height="12" rx="2" fill="#DCCBBF"/>
+          <rect x="40" y="225" width="14" height="12" rx="2" fill="#FBF1EA"/>
+          <rect x="680" y="56" width="170" height="80" rx="10" transform="rotate(0.8 765 96)" fill="#FFFFFF"/>
+          <rect x="680" y="156" width="170" height="80" rx="10" transform="rotate(-0.6 765 196)" fill="#FBF1EA"/>
+        </g>
+
+        <text class="t4aB" x="436" y="83" text-anchor="middle">focus: what is left</text>
+        <text class="t4aL" x="64" y="140">rituals</text>
+        <text class="t4aS" x="170" y="140">stand-up 5 x (5 + 2n), planning 30 + 5n, retro and review</text>
+        <text class="t4aL" x="64" y="172">coordination</text>
+        <text class="t4aS" x="170" y="172">per path: 60 min ad hoc, 20 with rituals</text>
+        <text class="t4aL" x="64" y="204">handoffs</text>
+        <text class="t4aS" x="170" y="204">40 min per item to each liaison</text>
+        <text class="t4aL" x="64" y="236">interrupts</text>
+        <text class="t4aS" x="170" y="236">seeded draws per person, 12 weeks</text>
+        <text class="t4aA" x="698" y="80">EXACT</text>
+        <text class="t4aL" x="698" y="100">paths n(n-1)/2</text>
+        <text class="t4aL" x="698" y="120">bus factor on the map</text>
+        <text class="t4aA" x="698" y="180">MODELLED</text>
+        <text class="t4aL" x="698" y="200">every hour figure</text>
+        <text class="t4aS" x="698" y="220">rules printed on the widget</text>
+
+        <text class="t4aN" x="30" y="282">n is the size of the person's own team. Change a rule and the numbers move; the direction of each design's effect is the claim.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - four costs come out of forty hours; what is left is the time the team's outcome actually gets</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Five numbers to read any design<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Communication paths</strong> (exact): pairs inside each team, plus one for each declared interface between teams. <strong>Meeting hours per person</strong> (modelled): the ritual set only. A team of 7 spends 3.5 hours each a week in it; a team of 9 spends 4.0, because a stand-up and a planning meeting both grow with the people in them.</p>
+        <p><strong>Focus hours per person</strong> (modelled): the week minus all four costs, averaged. <strong>Lowest individual focus</strong>: the person the design squeezes most, because an average can rise while one person sinks. <strong>Bus factor</strong> (exact on the declared map): the fewest departures that would leave some work area with nobody who knows it. Northline's is 1, and the one is Priya.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the rules leave out<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The model prices time, not quality. A ritual that saves no hours might still prevent the wrong dashboard from being built, and a split that adds focus might lose the conversation where Wei hears what Tom's stakeholders actually need. Neither shows up as an hour. The coordination rule assumes every path costs the same, when in a real team two or three paths carry most of the traffic. The interrupt draws are seeded, so the same numbers appear on every visit, which is what makes them checkable and also why they are not anyone's real week.</p>
+        <p>The bus factor here is the simple version: the smallest number of people who know any one area, on a map the team declares. Research versions estimate it from who wrote which files in a code base, and session 6 reads one of those studies.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="bench">
+    <div class="section-kicker">
+      <span class="klabel">Build-along · the bench</span>
+      <h2>Four designs, a late project, and a resignation</h2>
+      <span class="tag demo">★ 26 min · the main event</span>
+    </div>
+    <p class="lede">The bench opens on design 2, Northline with a weekly ritual set. Read it first: the five numbers, each person's week, the knowledge map and the comparison table. Then work through designs 1, 3 and 4, saying out loud what moved and who paid. Press the break button on design 2 and on design 4. Finish with the late project at 4 weeks, then drag the weeks.</p>
+
+    <div id="team-bench" data-design="rituals7"></div>
+
+    <div class="callout tip">
+      <p><strong>Read it in this order.</strong> The tag, then the verdict line, then the lowest individual focus before the average. On design 2 the average is 31.9 focus hours, and the lowest is Ana at 29.8, because the lead carries the most interrupts. Every design moves both numbers, and they do not always move together.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers what the four designs show</span>
+      <h2>Each design buys something, and someone pays for it</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">The numbers below are the ones the bench prints, written down so they can be argued with after class. An independent Python run of the same rules agrees with the browser on every value.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dot plot of focus hours per person per week for four designs, on an axis from 28 to 34 hours. Design 1, seven ad hoc: mean 31.4, lowest 29.3, 21 paths. Design 2, seven with rituals: mean 31.9, lowest 29.8, 21 paths. Design 3, split four and three: mean 32.6, lowest 29.8, 10 paths, 6 handoffs. Design 4, nine people: mean 31.1, lowest 28.7, 36 paths.">
+        <defs>
+          <filter id="t4bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="47" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t4bH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4bL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4bS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t4bB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t4bV { font: 800 12px Inter, sans-serif; fill: #6B3012; }
+          .t4bN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t4bH" x="30" y="26">FOCUS HOURS PER PERSON PER WEEK, MODELLED (AXIS STARTS AT 28)</text>
+
+        <g filter="url(#t4bSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M260 262 L740 262" stroke-width="1.4"/>
+          <path d="M260 258 L260 266 M340 258 L340 266 M420 258 L420 266 M500 258 L500 266 M580 258 L580 266 M660 258 L660 266 M740 258 L740 266" stroke-width="1.4"/>
+          <path d="M374 72 L524 72" stroke="#DCCBBF"/>
+          <path d="M414 124 L564 124" stroke="#DCCBBF"/>
+          <path d="M408 176 L605 176" stroke="#DCCBBF"/>
+          <path d="M320 228 L480 228" stroke="#DCCBBF"/>
+          <circle cx="368" cy="72" r="6" fill="#FFFFFF"/>
+          <circle cx="530" cy="72" r="7" fill="#9C4A1E"/>
+          <circle cx="408" cy="124" r="6" fill="#FFFFFF"/>
+          <circle cx="570" cy="124" r="7" fill="#9C4A1E"/>
+          <circle cx="402" cy="176" r="6" fill="#FFFFFF" stroke="#3E5C8A" stroke-width="2.4"/>
+          <circle cx="611" cy="176" r="7" fill="#9C4A1E"/>
+          <circle cx="314" cy="228" r="6" fill="#FFFFFF"/>
+          <circle cx="486" cy="228" r="7" fill="#9C4A1E"/>
+        </g>
+
+        <text class="t4bL" x="240" y="68" text-anchor="end">1 · seven, ad hoc</text>
+        <text class="t4bS" x="240" y="84" text-anchor="end">21 paths</text>
+        <text class="t4bL" x="240" y="120" text-anchor="end">2 · seven, ritual set</text>
+        <text class="t4bS" x="240" y="136" text-anchor="end">21 paths, 3.5 h meetings</text>
+        <text class="t4bL" x="240" y="172" text-anchor="end">3 · split 4 + 3</text>
+        <text class="t4bS" x="240" y="188" text-anchor="end">10 paths, 6 handoffs</text>
+        <text class="t4bL" x="240" y="224" text-anchor="end">4 · nine people</text>
+        <text class="t4bS" x="240" y="240" text-anchor="end">36 paths, 4.0 h meetings</text>
+        <text class="t4bV" x="545" y="60">31.4</text>
+        <text class="t4bV" x="585" y="112">31.9</text>
+        <text class="t4bV" x="626" y="164">32.6</text>
+        <text class="t4bV" x="501" y="216">31.1</text>
+        <text class="t4bS" x="368" y="98" text-anchor="middle">29.3 Ana</text>
+        <text class="t4bS" x="408" y="150" text-anchor="middle">29.8 Ana</text>
+        <text class="t4bB" x="402" y="202" text-anchor="middle">29.8 Tom, liaison</text>
+        <text class="t4bS" x="314" y="250" text-anchor="middle">28.7 Ana</text>
+        <text class="t4bS" x="260" y="282" text-anchor="middle">28</text>
+        <text class="t4bS" x="420" y="282" text-anchor="middle">30</text>
+        <text class="t4bS" x="580" y="282" text-anchor="middle">32</text>
+        <text class="t4bS" x="740" y="282" text-anchor="middle">34</text>
+        <text class="t4bL" x="770" y="128">● mean</text>
+        <text class="t4bL" x="770" y="148">○ lowest person</text>
+
+        <text class="t4bN" x="30" y="312">Northline, constructed; rules on the widget. The split lifts the average most and makes its two liaisons the most squeezed.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the gaps are an hour or two a week per person, which across seven people is a working day or more</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Design 1 to 2: the ritual set nearly breaks even<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>With no shared rituals, each of Northline's 21 paths costs each of its two people 60 minutes a week of ad hoc syncing: 6.0 hours a person. The ritual set costs 3.5 hours a person and cuts the path cost to 20 minutes, 2.0 hours. Net, focus rises from 31.4 to 31.9 hours a person. Half an hour. Now drag the ad hoc slider on design 1 to 30 minutes: the team without rituals has 34.4 focus hours, and the ritual set costs 2.5 hours a person. A ritual set pays only when it replaces coordination that was really happening. Session 3 built the budget that tells you which case you are in.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Design 3: fewer paths, and a cost that moves to two people<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Splitting into pipeline and models (Priya, Wei, Lena, Kofi) and insights (Ana, Tom, Sam), joined by one interface between Wei and Tom, cuts the paths from 21 to 10 and lifts the average to 32.6 focus hours, the highest of the four designs. Both sub-teams' rituals are smaller. But the 6 items a week that cross between the teams each cost the two liaisons 40 minutes, and Tom drops to 29.8 hours and Wei to 30.5 while Lena and Kofi rise to 34.7 and 34.8. An interface is not free; it is a cost the design concentrates on whoever stands at it. Conway's law from session 1 adds the other half: the work the two teams produce will start to meet at that same interface.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Design 4: more capacity, less per person<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Nine people, after both hires are fully up to speed: 36 paths, 4.0 meeting hours each, and focus per person falls to 31.1 hours. Team focus rises from 223.1 to 279.6 hours, so the team can do more, but the two people added 56.5 hours, not the roughly 63.7 two of the original seven would bring, because every veteran now coordinates along two more paths. The design does buy one thing the hours do not show: Jun has learned the pipeline, so the bus factor is 2. Press the break button on design 4 and nothing stops.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The split that made a hero of the liaison.</strong> A common pattern when a growing data team divides into "platform" and "analytics": the person who knew both sides becomes the interface, every cross-team request routes through them, and within a quarter they are the busiest and least productive person on either team. The split was right; the interface was one person wide. The usual fix is more than one liaison, or a written contract for what crosses (session 6 has the async version), not undoing the split.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the anti-lever and the break button</span>
+      <h2>Add two people late, and lose the one who knows</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">The designs compare steady states. These two buttons are about change. One tests the most quoted rule in team management on the model's own terms; the other removes a person and shows what the declared knowledge map says stops.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A chart of weeks to finish with two new hires against weeks of work left for the original seven. A dashed diagonal marks equal. The modelled line sits above the diagonal for 2 to 6 weeks left, meaning later: 2.2, 3.2, 4.2, 5.1, 6.0, and below it from 7 weeks: 6.9, 7.8, 9.4 at 10 weeks and 17.4 at 20 weeks. Points above the diagonal are later.">
+        <defs>
+          <filter id="t4cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="53" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t4cH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4cL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4cS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t4cR { font: 800 11px Inter, sans-serif; fill: #991B1B; }
+          .t4cB { font: 800 11px Inter, sans-serif; fill: #2A4165; }
+          .t4cA { font: 700 11px Inter, sans-serif; fill: #9C4A1E; }
+          .t4cN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t4cH" x="30" y="26">ADD TWO PEOPLE: LATER NEAR THE DEADLINE, SOONER FURTHER OUT (MODELLED)</text>
+
+        <g filter="url(#t4cSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M120 290 L800 290 M120 290 L120 50" stroke-width="1.4"/>
+          <path d="M120 290 L800 50" stroke="#6B5A4F" stroke-dasharray="6 5" stroke-width="1.4"/>
+                    <path d="M120 290 L188 263.8 L222 251.6 L256 239.6 L290 228.4 L324 217.4 L358 207.1 L392 196.6 L460 177.3 L800 81.6" stroke="#9C4A1E" stroke-width="2.6"/>
+          <circle cx="256" cy="239.6" r="6" fill="#991B1B" stroke="#991B1B"/>
+          <circle cx="358" cy="207.1" r="5" fill="#FFFFFF" stroke="#3E5C8A"/>
+        </g>
+
+        <text class="t4cS" x="120" y="308" text-anchor="middle">0</text>
+        <text class="t4cS" x="290" y="308" text-anchor="middle">5</text>
+        <text class="t4cS" x="460" y="308" text-anchor="middle">10</text>
+        <text class="t4cS" x="630" y="308" text-anchor="middle">15</text>
+        <text class="t4cS" x="800" y="308" text-anchor="middle">20</text>
+        <text class="t4cA" x="460" y="328" text-anchor="middle">weeks of work left for the seven</text>
+        <text class="t4cA" x="40" y="60">weeks to</text>
+        <text class="t4cA" x="40" y="74">finish,</text>
+        <text class="t4cA" x="40" y="88">with hires</text>
+        <text class="t4cR" x="150" y="222">4 left: 4.2</text>
+        <text class="t4cB" x="372" y="242">7 left: 6.9</text>
+        <text class="t4cS" x="470" y="96">dashed = finishes on</text>
+        <text class="t4cS" x="470" y="110">the original plan</text>
+        <text class="t4cL" x="790" y="112" text-anchor="end">20 left: 17.4</text>
+        <text class="t4cR" x="132" y="68">above the dashed line:</text>
+        <text class="t4cR" x="132" y="82">later than without hires</text>
+
+        <text class="t4cN" x="30" y="350">Ramp 0, 25, 50, 75, 100% by fortnight; mentoring 360 then 180 min a week per hire. The crossover is the rules', not a law's.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - on these rules the hires cost time for six weeks and pay it back after; change the ramp and the crossover moves</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The anti-lever: add two people to a late project<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>The model:</strong> Northline with its ritual set has 223.1 focus hours a week and a fixed amount of work left. Two hires join on day one. They deliver nothing in weeks 1 and 2, a quarter of their focus in weeks 3 and 4, half in 5 and 6, three quarters in 7 and 8, then all of it. Each takes 6 hours a week of veteran time in weeks 1 to 4 and 3 hours in weeks 5 to 8, and the team of 9 has 36 paths and bigger rituals. With 4 weeks of work left, the team finishes in 4.2 weeks: later. By then the veterans have spent 54 hours mentoring and the hires have 259 hours that were not yet productive.</p>
+        <p><strong>The honest nuance:</strong> drag the weeks. At 6 weeks left the hires still cost time (6.0 against 6.0, a few hours later); at 7 they save a little (6.9); at 20 they save over two and a half weeks (17.4). On these rules "adding people makes it later" is true near the deadline and false with time to spare. The crossover is a property of the ramp and mentoring numbers, which are invented. The shape is the lesson: new people cost before they pay, and how late the project is decides which side you are on.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The break button: Priya leaves<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A bench that can only report good news is measuring nothing. The break button removes Priya, the one person on the declared map who knows the pipeline. On designs 1, 2 and 3 the pipeline has nobody, the bus factor goes from 1 to 0, and 20 percent of Northline's weekly work stops. The table also shows the risk moving: infrastructure, which Priya shared with Kofi, now rests on Kofi alone. Paths fall from 21 to 15, and focus per person even rises slightly. The hours look better on the week she leaves, which is exactly why a team can miss the problem until the first pipeline failure.</p>
+        <p>On design 4, Jun has learned the pipeline. Press the button there: nothing stops, the bus factor goes from 2 to 1, and the pipeline now rests on Jun alone. One departure is survivable; the next is not. Session 6 turns that into a plan.</p>
+      </div>
+    </details>
+
+    <div class="callout tip">
+      <p><strong>Compute your own bus factor tonight.</strong> List your team's work areas down the side and the people across the top, put a dot where someone could keep the area running for a month without help, and find the row with the fewest dots. That count is your bus factor, and that row is your first session 6 task.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-4">
+    <div class="section-kicker">
+      <span class="klabel">Part 4 · covers Brooks's law and Conway, traced</span>
+      <h2>"Adding people to a late project makes it later", traced</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">The rule is usually quoted as a law of nature. It is an essay claim from experience, made in 1975 by someone who had run a very large software project, and it is better for being read as one.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A timeline of three sources. 1968, Conway's paper in Datamation: paths about half the square of the people, and adding manpower does not simply add productivity; read at source. 1975, Brooks's The Mythical Man-Month: adding manpower to a late software project makes it later; reported. 1995, the anniversary edition with four new chapters; reported. Then this bench: on its own stated rules, later up to about six weeks out, sooner beyond.">
+        <defs>
+          <filter id="t4dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="59" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+        </defs>
+        <style>
+          .t4dH { font: 800 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4dL { font: 600 12px Inter, sans-serif; fill: #2B1D16; }
+          .t4dS { font: 400 11px Inter, sans-serif; fill: #6B5A4F; }
+          .t4dW { font: 800 11px Inter, sans-serif; fill: #FFFFFF; }
+          .t4dD { font: 800 12px Inter, sans-serif; fill: #6B3012; }
+          .t4dN { font: 400 12px Inter, sans-serif; fill: #6B5A4F; }
+        </style>
+
+        <text class="t4dH" x="30" y="26">WHERE THE RULE COMES FROM, AND WHAT EACH SOURCE IS</text>
+
+        <g filter="url(#t4dSk)" fill="none" stroke="#2B1D16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M70 120 L810 120"/>
+          <circle cx="130" cy="120" r="9" fill="#9C4A1E"/>
+          <circle cx="350" cy="120" r="9" fill="#FFFFFF"/>
+          <circle cx="570" cy="120" r="9" fill="#FFFFFF"/>
+          <circle cx="760" cy="120" r="9" fill="#3E5C8A"/>
+          <rect x="88" y="62" width="84" height="22" rx="11" fill="#9C4A1E"/>
+          <rect x="308" y="62" width="84" height="22" rx="11" fill="#6B5A4F"/>
+          <rect x="528" y="62" width="84" height="22" rx="11" fill="#6B5A4F"/>
+          <rect x="718" y="62" width="84" height="22" rx="11" fill="#3E5C8A"/>
+        </g>
+
+        <text class="t4dW" x="130" y="77" text-anchor="middle">read</text>
+        <text class="t4dW" x="350" y="77" text-anchor="middle">reported</text>
+        <text class="t4dW" x="570" y="77" text-anchor="middle">reported</text>
+        <text class="t4dW" x="760" y="77" text-anchor="middle">modelled</text>
+        <text class="t4dD" x="130" y="106" text-anchor="middle">1968</text>
+        <text class="t4dD" x="350" y="106" text-anchor="middle">1975</text>
+        <text class="t4dD" x="570" y="106" text-anchor="middle">1995</text>
+        <text class="t4dD" x="760" y="106" text-anchor="middle">this bench</text>
+        <text class="t4dL" x="130" y="150" text-anchor="middle">Conway, Datamation</text>
+        <text class="t4dS" x="130" y="166" text-anchor="middle">paths about half the</text>
+        <text class="t4dS" x="130" y="180" text-anchor="middle">square of the people</text>
+        <text class="t4dL" x="350" y="150" text-anchor="middle">Brooks, essay</text>
+        <text class="t4dS" x="350" y="166" text-anchor="middle">late project plus</text>
+        <text class="t4dS" x="350" y="180" text-anchor="middle">people makes it later</text>
+        <text class="t4dL" x="570" y="150" text-anchor="middle">Anniversary edition</text>
+        <text class="t4dS" x="570" y="166" text-anchor="middle">four new chapters</text>
+        <text class="t4dL" x="760" y="150" text-anchor="middle">stated rules</text>
+        <text class="t4dS" x="760" y="166" text-anchor="middle">later to 6 weeks out,</text>
+        <text class="t4dS" x="760" y="180" text-anchor="middle">sooner beyond</text>
+
+        <text class="t4dN" x="30" y="226">Only Conway's paper was read for these pages. Brooks's chapter is quoted as reported, and no later self-assessment is quoted.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the path arithmetic is older than the law, and the law is an argument, not a measurement</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>What Brooks argued, as reported<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Fred Brooks's <em>The Mythical Man-Month</em> (1975, anniversary edition 1995) is reported to give three reasons why adding people to a late software project makes it later: much of the work cannot be split into pieces people can do without talking to each other, new people take time to learn the project, and communication overhead grows as the team does. The chapter itself was not read for these pages, so the wording here is reported, and no later remark by Brooks about his own law is quoted.</p>
+        <p>Conway's 1968 paper, read at source, already made two of those points: possible communication paths grow at roughly half the square of the number of people, and it is a mistake to assume that adding manpower simply adds to productivity. The bench's anti-lever builds in all three reasons as stated rules and reports that they win near the deadline and lose with time to spare. That is consistent with the essay's own wording, which is about a project that is already late.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>How to use the law without overusing it<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Quoted as "never add people", the law stops teams from hiring for work that is months away and genuinely needs more hands. Quoted as "people added late cost before they pay", it gives a lead a better question for a sponsor offering help: how many weeks are left, how long until a new person is useful here, and who will mentor them? If the honest answer to the second is longer than the first, decline the help and cut scope instead. Hiring itself, how to find and interview those people, is taught in <a href="https://phoebefu6.github.io/learn-ai-hr-with-phoebe/">AI HR ↗</a>, and their first weeks in <a href="https://phoebefu6.github.io/learn-performance-management-with-phoebe/courses/b2-onboarding-ramp.html">Performance Management, the onboarding ramp ↗</a>.</p>
+      </div>
+    </details>
+
+    <div class="callout tip">
+      <p><strong>The sentence to use with a sponsor offering two people.</strong> "Thank you. With four weeks left, two new people will cost us more in onboarding than they deliver before the date. If the date can move to the end of next quarter, they will pay for themselves; if it cannot, help me cut scope instead."</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 5</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Price one week of your team.</strong> For one person, estimate rituals, coordination, handoffs and interrupts in hours. What is left?</li>
+      <li><strong>Find your liaison.</strong> Who stands at your team's busiest interface, and what is their week like compared with the rest?</li>
+      <li><strong>Draw your knowledge map</strong> and compute your bus factor. Which row has the fewest dots?</li>
+      <li><strong>Write the sponsor sentence</strong> from Part 4 for a real staffing offer you have had or expect, with your own numbers.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 4 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · On the bench, splitting Northline into 4 + 3 raises mean focus from 31.9 to 32.6 hours. What is the most complete reading?</p>
+      <button class="qopt" type="button">A · The split is better for everyone and should always be done</button>
+      <button class="qopt" type="button">B · The split halves the paths and lifts the average, but the six weekly handoffs land on the two liaisons, who become the most squeezed people on the team</button>
+      <button class="qopt" type="button">C · The split is worse because it has handoffs</button>
+      <button class="qopt" type="button">D · The numbers are measured from a real team, so the split will work in yours</button>
+      <p class="qwhy">The average rose, but Tom fell to 29.8 hours and Wei to 30.5 while Lena and Kofi rose to 34.7 and 34.8. A design concentrates cost on whoever stands at its interface. D mislabels a model as a measurement: Northline is constructed.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · On the bench's rules, two hires added with 4 weeks of work left finish in 4.2 weeks, and with 20 weeks left in 17.4. What is the honest statement?</p>
+      <button class="qopt" type="button">A · Brooks's law is proved: adding people always makes a project later</button>
+      <button class="qopt" type="button">B · Brooks's law is disproved, because the hires helped at 20 weeks</button>
+      <button class="qopt" type="button">C · Measured data shows the crossover is at 6.5 weeks for every team</button>
+      <button class="qopt" type="button">D · On stated ramp and mentoring rules, new people cost before they pay, so close to the deadline the project finishes later and with time to spare it finishes sooner; the crossover week belongs to the rules, not to teams</button>
+      <p class="qwhy">Brooks's law is an essay claim about projects that are already late, and the model agrees in that region. A and B each take one side of a curve. C treats invented ramp numbers as a measurement.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · When Priya leaves design 2, focus per person rises slightly and paths fall from 21 to 15. Why is that not good news?</p>
+      <button class="qopt" type="button">A · Because the pipeline now has nobody who knows it, 20 percent of the weekly work stops, the bus factor is 0, and infrastructure rests on Kofi alone: the hours look better while the risk has arrived</button>
+      <button class="qopt" type="button">B · It is good news: fewer paths means a better team</button>
+      <button class="qopt" type="button">C · Because the bench measures Priya's real performance</button>
+      <button class="qopt" type="button">D · Because six people can never run a data team</button>
+      <p class="qwhy">The hour figures only price time spent. The knowledge map shows what can no longer be done at all. That is why the break button exists: a bench that reports only better hours would miss the first pipeline failure.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Every number on the bench</span><span class="note">Paths and bus factor exact on the declared team; every hour modelled by rules printed on the widget; an independent Python run agrees with the browser on all 389 values</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Conway (1968), How do committees invent? Datamation</span><span class="note">Read at source: communication paths about half the square of the people, and the argument against assuming manpower simply adds productivity</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Brooks (1975), The Mythical Man-Month</span><span class="note">Reported: the law and its three reasons; the chapter was not read and no later remark by Brooks is quoted</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Northline, its roster and knowledge map</span><span class="note">Constructed for teaching; the ramp, mentoring and coordination numbers are invented rules, and only the direction of their effects is claimed</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Price the week</b><span>40 hours minus rituals, coordination per path, handoffs and interrupts equals focus.</span></div>
+      <div class="cheat-item"><b>Rituals near break-even</b><span>Modelled: 31.4 to 31.9 focus hours at 60 ad hoc minutes per path; a loss at 30.</span></div>
+      <div class="cheat-item"><b>Splits move cost</b><span>Paths 21 to 10, average up, liaisons squeezed to 29.8 and 30.5.</span></div>
+      <div class="cheat-item"><b>Bigger is not proportionally more</b><span>Nine people: 36 paths, 31.1 hours each; two hires add 56.5, not 63.7.</span></div>
+      <div class="cheat-item"><b>Late hires cost first</b><span>Modelled: 4 weeks left becomes 4.2; 20 weeks left becomes 17.4.</span></div>
+      <div class="cheat-item"><b>Bus factor</b><span>Fewest knowers of any area. Northline: 1, and the one is Priya.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>The bench prices time and knowledge. It cannot price the thing Google reports matters most in its own teams: whether people feel safe enough to say "I broke the pipeline" or "I think this priority is wrong". Session 5 reads that research at source and turns conflict, between people and between priorities, into something a team can run on purpose.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 4 of 6 · learn-team-management-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="03-rhythm-and-cost.html">← Prev: The team's rhythm and what it costs</a> &nbsp;·&nbsp; <a href="05-safety-and-conflict.html">Next: Safety, conflict and the disagreement you need →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/northline-data.js?v=1"></script>
+<script src="../assets/team-live.js?v=1"></script>
+<script src="../assets/app.js?v=15"></script>
+</body>
+</html>

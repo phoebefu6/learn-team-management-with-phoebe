@@ -1,0 +1,626 @@
+{
+ "adhoc30": {
+  "busFactor": 1,
+  "coordHours": 3.0,
+  "focusHours": 34.374008,
+  "handoffs": 0,
+  "id": "adhoc7",
+  "meetingHours": 0.0,
+  "minFocusHours": 32.347222,
+  "paths": 21,
+  "people": [
+   {
+    "focus": 32.347222,
+    "name": "Ana"
+   },
+   {
+    "focus": 34.236111,
+    "name": "Priya"
+   },
+   {
+    "focus": 34.270833,
+    "name": "Tom"
+   },
+   {
+    "focus": 35.590278,
+    "name": "Wei"
+   },
+   {
+    "focus": 33.131944,
+    "name": "Sam"
+   },
+   {
+    "focus": 35.486111,
+    "name": "Lena"
+   },
+   {
+    "focus": 35.555556,
+    "name": "Kofi"
+   }
+  ],
+  "single": [
+   "pipeline"
+  ],
+  "size": 7,
+  "stopped": [],
+  "stoppedShare": 0,
+  "teamFocusHours": 240.618056
+ },
+ "designs": [
+  {
+   "busFactor": 1,
+   "coordHours": 6.0,
+   "focusHours": 31.374008,
+   "handoffs": 0,
+   "id": "adhoc7",
+   "meetingHours": 0.0,
+   "minFocusHours": 29.347222,
+   "paths": 21,
+   "people": [
+    {
+     "focus": 29.347222,
+     "name": "Ana"
+    },
+    {
+     "focus": 31.236111,
+     "name": "Priya"
+    },
+    {
+     "focus": 31.270833,
+     "name": "Tom"
+    },
+    {
+     "focus": 32.590278,
+     "name": "Wei"
+    },
+    {
+     "focus": 30.131944,
+     "name": "Sam"
+    },
+    {
+     "focus": 32.486111,
+     "name": "Lena"
+    },
+    {
+     "focus": 32.555556,
+     "name": "Kofi"
+    }
+   ],
+   "single": [
+    "pipeline"
+   ],
+   "size": 7,
+   "stopped": [],
+   "stoppedShare": 0,
+   "teamFocusHours": 219.618056
+  },
+  {
+   "busFactor": 1,
+   "coordHours": 2.0,
+   "focusHours": 31.874008,
+   "handoffs": 0,
+   "id": "rituals7",
+   "meetingHours": 3.5,
+   "minFocusHours": 29.847222,
+   "paths": 21,
+   "people": [
+    {
+     "focus": 29.847222,
+     "name": "Ana"
+    },
+    {
+     "focus": 31.736111,
+     "name": "Priya"
+    },
+    {
+     "focus": 31.770833,
+     "name": "Tom"
+    },
+    {
+     "focus": 33.090278,
+     "name": "Wei"
+    },
+    {
+     "focus": 30.631944,
+     "name": "Sam"
+    },
+    {
+     "focus": 32.986111,
+     "name": "Lena"
+    },
+    {
+     "focus": 33.055556,
+     "name": "Kofi"
+    }
+   ],
+   "single": [
+    "pipeline"
+   ],
+   "size": 7,
+   "stopped": [],
+   "stoppedShare": 0,
+   "teamFocusHours": 223.118056
+  },
+  {
+   "busFactor": 1,
+   "coordHours": 0.952381,
+   "focusHours": 32.635913,
+   "handoffs": 6,
+   "id": "split43",
+   "meetingHours": 2.642857,
+   "minFocusHours": 29.770833,
+   "paths": 10,
+   "people": [
+    {
+     "focus": 32.180556,
+     "name": "Ana"
+    },
+    {
+     "focus": 33.486111,
+     "name": "Priya"
+    },
+    {
+     "focus": 29.770833,
+     "name": "Tom"
+    },
+    {
+     "focus": 30.506944,
+     "name": "Wei"
+    },
+    {
+     "focus": 32.965278,
+     "name": "Sam"
+    },
+    {
+     "focus": 34.736111,
+     "name": "Lena"
+    },
+    {
+     "focus": 34.805556,
+     "name": "Kofi"
+    }
+   ],
+   "single": [
+    "pipeline"
+   ],
+   "size": 7,
+   "stopped": [],
+   "stoppedShare": 0,
+   "teamFocusHours": 228.451389
+  },
+  {
+   "busFactor": 2,
+   "coordHours": 2.666667,
+   "focusHours": 31.067901,
+   "handoffs": 0,
+   "id": "nine",
+   "meetingHours": 4.0,
+   "minFocusHours": 28.680556,
+   "paths": 36,
+   "people": [
+    {
+     "focus": 28.680556,
+     "name": "Ana"
+    },
+    {
+     "focus": 30.569444,
+     "name": "Priya"
+    },
+    {
+     "focus": 30.604167,
+     "name": "Tom"
+    },
+    {
+     "focus": 31.923611,
+     "name": "Wei"
+    },
+    {
+     "focus": 29.465278,
+     "name": "Sam"
+    },
+    {
+     "focus": 31.819444,
+     "name": "Lena"
+    },
+    {
+     "focus": 31.888889,
+     "name": "Kofi"
+    },
+    {
+     "focus": 32.236111,
+     "name": "Mo"
+    },
+    {
+     "focus": 32.423611,
+     "name": "Jun"
+    }
+   ],
+   "single": [],
+   "size": 9,
+   "stopped": [],
+   "stoppedShare": 0,
+   "teamFocusHours": 279.611111
+  }
+ ],
+ "interrupts": [
+  [
+   325,
+   350,
+   260,
+   170,
+   410,
+   410,
+   225,
+   320,
+   230,
+   150,
+   320,
+   180
+  ],
+  [
+   160,
+   215,
+   180,
+   180,
+   160,
+   185,
+   170,
+   100,
+   130,
+   180,
+   210,
+   120
+  ],
+  [
+   175,
+   205,
+   150,
+   110,
+   165,
+   185,
+   260,
+   110,
+   180,
+   140,
+   165,
+   120
+  ],
+  [
+   55,
+   135,
+   115,
+   80,
+   50,
+   55,
+   45,
+   70,
+   100,
+   100,
+   110,
+   100
+  ],
+  [
+   140,
+   310,
+   335,
+   295,
+   235,
+   295,
+   180,
+   160,
+   250,
+   130,
+   175,
+   280
+  ],
+  [
+   70,
+   65,
+   80,
+   100,
+   115,
+   130,
+   55,
+   90,
+   60,
+   115,
+   85,
+   125
+  ],
+  [
+   75,
+   95,
+   60,
+   125,
+   50,
+   80,
+   75,
+   90,
+   70,
+   75,
+   125,
+   120
+  ],
+  [
+   80,
+   75,
+   90,
+   60,
+   60,
+   55,
+   80,
+   50,
+   60,
+   60,
+   75,
+   45
+  ],
+  [
+   30,
+   75,
+   45,
+   80,
+   55,
+   30,
+   30,
+   70,
+   75,
+   55,
+   80,
+   30
+  ]
+ ],
+ "late": [
+  {
+   "hireIdleHours": 177.829167,
+   "mentorHours": 36.0,
+   "paths": 36,
+   "weeksLeft": 2,
+   "withHires": 2.184085
+  },
+  {
+   "hireIdleHours": 226.338889,
+   "mentorHours": 48.0,
+   "paths": 36,
+   "weeksLeft": 3,
+   "withHires": 3.202418
+  },
+  {
+   "hireIdleHours": 258.681944,
+   "mentorHours": 54.0,
+   "paths": 36,
+   "weeksLeft": 4,
+   "withHires": 4.200469
+  },
+  {
+   "hireIdleHours": 291.025,
+   "mentorHours": 60.0,
+   "paths": 36,
+   "weeksLeft": 5,
+   "withHires": 5.125241
+  },
+  {
+   "hireIdleHours": 307.201389,
+   "mentorHours": 66.0,
+   "paths": 36,
+   "weeksLeft": 6,
+   "withHires": 6.046873
+  },
+  {
+   "hireIdleHours": 307.201389,
+   "mentorHours": 66.0,
+   "paths": 36,
+   "weeksLeft": 7,
+   "withHires": 6.91357
+  },
+  {
+   "hireIdleHours": 323.377778,
+   "mentorHours": 72.0,
+   "paths": 36,
+   "weeksLeft": 8,
+   "withHires": 7.780268
+  },
+  {
+   "hireIdleHours": 323.397222,
+   "mentorHours": 72.0,
+   "paths": 36,
+   "weeksLeft": 10,
+   "withHires": 9.393661
+  },
+  {
+   "hireIdleHours": 323.475,
+   "mentorHours": 72.0,
+   "paths": 36,
+   "weeksLeft": 20,
+   "withHires": 17.373523
+  }
+ ],
+ "leaver": {
+  "adhoc7": {
+   "busFactor": 0,
+   "coordHours": 5.0,
+   "focusHours": 32.396991,
+   "handoffs": 0,
+   "id": "adhoc7",
+   "meetingHours": 0.0,
+   "minFocusHours": 30.347222,
+   "paths": 15,
+   "people": [
+    {
+     "focus": 30.347222,
+     "name": "Ana"
+    },
+    {
+     "focus": 32.270833,
+     "name": "Tom"
+    },
+    {
+     "focus": 33.590278,
+     "name": "Wei"
+    },
+    {
+     "focus": 31.131944,
+     "name": "Sam"
+    },
+    {
+     "focus": 33.486111,
+     "name": "Lena"
+    },
+    {
+     "focus": 33.555556,
+     "name": "Kofi"
+    }
+   ],
+   "single": [
+    "infrastructure"
+   ],
+   "size": 6,
+   "stopped": [
+    "pipeline"
+   ],
+   "stoppedShare": 20,
+   "teamFocusHours": 194.381944
+  },
+  "nine": {
+   "busFactor": 1,
+   "coordHours": 2.333333,
+   "focusHours": 31.713542,
+   "handoffs": 0,
+   "id": "nine",
+   "meetingHours": 3.75,
+   "minFocusHours": 29.263889,
+   "paths": 28,
+   "people": [
+    {
+     "focus": 29.263889,
+     "name": "Ana"
+    },
+    {
+     "focus": 31.1875,
+     "name": "Tom"
+    },
+    {
+     "focus": 32.506944,
+     "name": "Wei"
+    },
+    {
+     "focus": 30.048611,
+     "name": "Sam"
+    },
+    {
+     "focus": 32.402778,
+     "name": "Lena"
+    },
+    {
+     "focus": 32.472222,
+     "name": "Kofi"
+    },
+    {
+     "focus": 32.819444,
+     "name": "Mo"
+    },
+    {
+     "focus": 33.006944,
+     "name": "Jun"
+    }
+   ],
+   "single": [
+    "pipeline"
+   ],
+   "size": 8,
+   "stopped": [],
+   "stoppedShare": 0,
+   "teamFocusHours": 253.708333
+  },
+  "rituals7": {
+   "busFactor": 0,
+   "coordHours": 1.666667,
+   "focusHours": 32.480324,
+   "handoffs": 0,
+   "id": "rituals7",
+   "meetingHours": 3.25,
+   "minFocusHours": 30.430556,
+   "paths": 15,
+   "people": [
+    {
+     "focus": 30.430556,
+     "name": "Ana"
+    },
+    {
+     "focus": 32.354167,
+     "name": "Tom"
+    },
+    {
+     "focus": 33.673611,
+     "name": "Wei"
+    },
+    {
+     "focus": 31.215278,
+     "name": "Sam"
+    },
+    {
+     "focus": 33.569444,
+     "name": "Lena"
+    },
+    {
+     "focus": 33.638889,
+     "name": "Kofi"
+    }
+   ],
+   "single": [
+    "infrastructure"
+   ],
+   "size": 6,
+   "stopped": [
+    "pipeline"
+   ],
+   "stoppedShare": 20,
+   "teamFocusHours": 194.881944
+  },
+  "split43": {
+   "busFactor": 0,
+   "coordHours": 0.777778,
+   "focusHours": 32.78588,
+   "handoffs": 6,
+   "id": "split43",
+   "meetingHours": 2.5,
+   "minFocusHours": 29.770833,
+   "paths": 7,
+   "people": [
+    {
+     "focus": 32.180556,
+     "name": "Ana"
+    },
+    {
+     "focus": 29.770833,
+     "name": "Tom"
+    },
+    {
+     "focus": 31.090278,
+     "name": "Wei"
+    },
+    {
+     "focus": 32.965278,
+     "name": "Sam"
+    },
+    {
+     "focus": 35.319444,
+     "name": "Lena"
+    },
+    {
+     "focus": 35.388889,
+     "name": "Kofi"
+    }
+   ],
+   "single": [
+    "infrastructure"
+   ],
+   "size": 6,
+   "stopped": [
+    "pipeline"
+   ],
+   "stoppedShare": 20,
+   "teamFocusHours": 196.715278
+  }
+ }
+}
